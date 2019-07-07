@@ -1,4 +1,4 @@
-# Đọc và diễn giải kết quả phân tích
+# Viết báo cáo phân tích phân tích
 
 ## Nội dung dự kiến
 

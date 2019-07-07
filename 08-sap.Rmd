@@ -1,4 +1,4 @@
-# Lập kế hoạch phân tích
+# Đọc và diễn giải kết quả phân tích, Lập kế hoạch phân tích
 
 ## Nội dung dự kiến
 
