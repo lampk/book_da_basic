@@ -1,0 +1,3 @@
+# Chuẩn bị dữ liệu cho phân tích
+
+We describe our methods in this chapter.

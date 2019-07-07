@@ -1,0 +1,9 @@
+# Kiểm định giả thuyết thống kê
+
+## Nội dung dự kiến
+
+* Nguyên tắc kiểm định thống kê
+* Tổng quan về các kiểm định thống kê thường gặp
+* Trị số p: ý nghĩa và giá trị
+* Mối quan hệ giữa trị số p và khoảng tin cậy
+

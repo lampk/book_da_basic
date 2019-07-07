@@ -1,0 +1,14 @@
+# Mô hình thống kê
+
+## Nội dung dự kiến
+
+* Ước lượng, khoảng ước lượng, khoảng tin cậy
+* Mô hình thống kê là gì? So sánh với kiểm định thống kê
+* Nguyên tắc xây dựng mô hình thống kê
+* Tổng quan các mô hình thống kê thường gặp
+
+* Cách diễn giải ý nghĩa ước lượng và khoảng ước lượng
+* Cách lập kế hoạch xây dựng mô hình thống kê
+* Cách diễn giải kết quả từ mô hình thống kê
+* Cách lựa chọn mô hình thống kê phù hợp
+

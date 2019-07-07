@@ -1,0 +1,7 @@
+# Đọc và diễn giải kết quả phân tích
+
+## Nội dung dự kiến
+
+* Đọc kết quả phân tích như thế nào?
+* Diễn giải kết quả phân tích như thế nào?
+* Những sai lầm thường gặp khi đọc và diễn giải kết quả phân tích?

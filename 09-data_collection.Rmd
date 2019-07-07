@@ -1,0 +1,7 @@
+# Thu thập dữ liệu
+
+## Nội dung dự kiến
+
+* Những điểm càn lưu ý khi thu thập dữ liệu
+* Thu thập dữ liệu như thế nào? WHO-WHAT-WHEN-WHERE-HOW
+* Epidata
