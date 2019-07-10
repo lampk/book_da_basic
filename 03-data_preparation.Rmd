@@ -10,13 +10,13 @@ Tạo thêm biến số mới dựa trên các biến số sẵn có: Ví dụ t
 
 (phần này em không chắc là trình bày nội dung gì)
 
-# Chuyển dạng dữ liệu cho phù hợp với phân tích
+## Chuyển dạng dữ liệu cho phù hợp với phân tích
 
-## Kết hợp các bảng dữ liệu với nhau
+### Kết hợp các bảng dữ liệu với nhau
 
 Dữ liệu có thể nằm ở nhiều tập tin khác nhau hoặc do nhiều người nhập liệu, cần phải ghép lại thành một bảng dữ liệu hoàn chỉnh để có đầy đủ thông tin phục vụ cho việc phân tích.
 
-## Dữ liệu dạng dài hay dạng rộng
+### Dữ liệu dạng dài hay dạng rộng
 
 Ví dụ ta có bảng dữ liệu như sau gồm 4 cột:
 
