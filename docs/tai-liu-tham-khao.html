@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Tài liệu tham khảo | Phân tích số liệu cơ bản</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Tài liệu tham khảo | Phân tích số liệu cơ bản" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="orientrcu/book_da_basic" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Tài liệu tham khảo | Phân tích số liệu cơ bản" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Phùng Khánh Lâm, Ong Phúc Thịnh" />
+
+
+<meta name="date" content="2019-07-10" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="uc-tinh-c-mu.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Phân tích dữ liệu cơ bản</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Lời nói đầu</a><ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#ni-dung-d-kin"><i class="fa fa-check"></i><b>0.1</b> Nội dung dự kiến</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#d-liu-s-dung-trong-sach"><i class="fa fa-check"></i><b>0.2</b> Dữ liệu sử dụng trong sách</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Giới thiệu về phân tích dữ liệu</a></li>
+<li class="chapter" data-level="2" data-path="data-cleaning.html"><a href="data-cleaning.html"><i class="fa fa-check"></i><b>2</b> Kiểm tra và làm sạch dữ liệu</a><ul>
+<li class="chapter" data-level="2.1" data-path="data-cleaning.html"><a href="data-cleaning.html#error"><i class="fa fa-check"></i><b>2.1</b> Các nhóm lỗi dữ liệu thường gặp</a></li>
+<li class="chapter" data-level="2.2" data-path="data-cleaning.html"><a href="data-cleaning.html#detectmethod"><i class="fa fa-check"></i><b>2.2</b> Phương pháp phát hiện lỗi</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="data-cleaning.html"><a href="data-cleaning.html#d-liu-bi-thiumt"><i class="fa fa-check"></i><b>2.2.1</b> Dữ liệu bị thiếu/mất</a></li>
+<li class="chapter" data-level="2.2.2" data-path="data-cleaning.html"><a href="data-cleaning.html#d-liu-bi-lp-lai"><i class="fa fa-check"></i><b>2.2.2</b> Dữ liệu bị lặp lại</a></li>
+<li class="chapter" data-level="2.2.3" data-path="data-cleaning.html"><a href="data-cleaning.html#gia-tri-khong-hp-ly"><i class="fa fa-check"></i><b>2.2.3</b> Giá trị không hợp lý</a></li>
+<li class="chapter" data-level="2.2.4" data-path="data-cleaning.html"><a href="data-cleaning.html#khong-tuong-hp-gia-cac-bin-s"><i class="fa fa-check"></i><b>2.2.4</b> Không tương hợp giữa các biến số</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="data-cleaning.html"><a href="data-cleaning.html#quy-trinh-kim-tra-va-lam-sach-d-liu"><i class="fa fa-check"></i><b>2.3</b> Quy trình kiểm tra và làm sạch dữ liệu</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="data-cleaning.html"><a href="data-cleaning.html#tim-li"><i class="fa fa-check"></i><b>2.3.1</b> Tìm lỗi</a></li>
+<li class="chapter" data-level="2.3.2" data-path="data-cleaning.html"><a href="data-cleaning.html#chn-oan-li"><i class="fa fa-check"></i><b>2.3.2</b> Chẩn đoán lỗi</a></li>
+<li class="chapter" data-level="2.3.3" data-path="data-cleaning.html"><a href="data-cleaning.html#sa-li-lam-sach-d-liu"><i class="fa fa-check"></i><b>2.3.3</b> Sửa lỗi (làm sạch dữ liệu)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html"><i class="fa fa-check"></i><b>3</b> Chuẩn bị dữ liệu cho phân tích</a><ul>
+<li class="chapter" data-level="3.1" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html#tao-them-bin-s-mi"><i class="fa fa-check"></i><b>3.1</b> Tạo thêm biến số mới</a></li>
+<li class="chapter" data-level="3.2" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html#inh-dang-bin-s"><i class="fa fa-check"></i><b>3.2</b> Định dạng biến số</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="chuyn-dang-d-liu-cho-phu-hp-vi-phan-tich.html"><a href="chuyn-dang-d-liu-cho-phu-hp-vi-phan-tich.html"><i class="fa fa-check"></i><b>4</b> Chuyển dạng dữ liệu cho phù hợp với phân tích</a><ul>
+<li class="chapter" data-level="4.1" data-path="chuyn-dang-d-liu-cho-phu-hp-vi-phan-tich.html"><a href="chuyn-dang-d-liu-cho-phu-hp-vi-phan-tich.html#kt-hp-cac-bang-d-liu-vi-nhau"><i class="fa fa-check"></i><b>4.1</b> Kết hợp các bảng dữ liệu với nhau</a></li>
+<li class="chapter" data-level="4.2" data-path="chuyn-dang-d-liu-cho-phu-hp-vi-phan-tich.html"><a href="chuyn-dang-d-liu-cho-phu-hp-vi-phan-tich.html#d-liu-dang-dai-hay-dang-rng"><i class="fa fa-check"></i><b>4.2</b> Dữ liệu dạng dài hay dạng rộng</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html"><i class="fa fa-check"></i><b>5</b> Phân tích mô tả</a></li>
+<li class="chapter" data-level="6" data-path="kim-inh-gia-thuyt-thng-ke.html"><a href="kim-inh-gia-thuyt-thng-ke.html"><i class="fa fa-check"></i><b>6</b> Kiểm định giả thuyết thống kê</a><ul>
+<li class="chapter" data-level="6.1" data-path="kim-inh-gia-thuyt-thng-ke.html"><a href="kim-inh-gia-thuyt-thng-ke.html#ni-dung-d-kin-1"><i class="fa fa-check"></i><b>6.1</b> Nội dung dự kiến</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="mo-hinh-thng-ke.html"><a href="mo-hinh-thng-ke.html"><i class="fa fa-check"></i><b>7</b> Mô hình thống kê</a><ul>
+<li class="chapter" data-level="7.1" data-path="mo-hinh-thng-ke.html"><a href="mo-hinh-thng-ke.html#ni-dung-d-kin-2"><i class="fa fa-check"></i><b>7.1</b> Nội dung dự kiến</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="vit-bao-cao-phan-tich-phan-tich.html"><a href="vit-bao-cao-phan-tich-phan-tich.html"><i class="fa fa-check"></i><b>8</b> Viết báo cáo phân tích phân tích</a><ul>
+<li class="chapter" data-level="8.1" data-path="vit-bao-cao-phan-tich-phan-tich.html"><a href="vit-bao-cao-phan-tich-phan-tich.html#ni-dung-d-kin-3"><i class="fa fa-check"></i><b>8.1</b> Nội dung dự kiến</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><a href="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><i class="fa fa-check"></i><b>9</b> Đọc và diễn giải kết quả phân tích, Lập kế hoạch phân tích</a><ul>
+<li class="chapter" data-level="9.1" data-path="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><a href="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html#ni-dung-d-kin-4"><i class="fa fa-check"></i><b>9.1</b> Nội dung dự kiến</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="thu-thp-d-liu.html"><a href="thu-thp-d-liu.html"><i class="fa fa-check"></i><b>10</b> Thu thập dữ liệu</a><ul>
+<li class="chapter" data-level="10.1" data-path="thu-thp-d-liu.html"><a href="thu-thp-d-liu.html#ni-dung-d-kin-5"><i class="fa fa-check"></i><b>10.1</b> Nội dung dự kiến</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="tom-tt.html"><a href="tom-tt.html"><i class="fa fa-check"></i><b>11</b> Tóm tắt</a><ul>
+<li class="chapter" data-level="11.1" data-path="tom-tt.html"><a href="tom-tt.html#ni-dung-d-kin-6"><i class="fa fa-check"></i><b>11.1</b> Nội dung dự kiến</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="Rcmdr.html"><a href="Rcmdr.html"><i class="fa fa-check"></i><b>12</b> Giới thiệu về R và R Commander</a></li>
+<li class="chapter" data-level="" data-path="uc-tinh-c-mu.html"><a href="uc-tinh-c-mu.html"><i class="fa fa-check"></i>Ước tính cỡ mẫu</a></li>
+<li class="chapter" data-level="" data-path="tai-liu-tham-khao.html"><a href="tai-liu-tham-khao.html"><i class="fa fa-check"></i>Tài liệu tham khảo</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Phân tích số liệu cơ bản</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="tai-liu-tham-khao" class="section level1 unnumbered">
+<h1>Tài liệu tham khảo</h1>
+
+<p>This book aims to provide tips in doing basic data analysis</p>
+
+<div id="refs" class="references">
+<div>
+<p>Lam, Phung Khanh, Tran Van Ngoc, Truong Thi Thu Thuy, Nguyen Thi Hong Van, Tran Thi Nhu Thuy, Dong Thi Hoai Tam, Nguyen Minh Dung, et al. 2017. “The Value of Daily Platelet Counts for Predicting Dengue Shock Syndrome: Results from a Prospective Observational Study of 2301 Vietnamese Children with Dengue.” Edited by William B Messer. <em>PLOS Neglected Tropical Diseases</em> 11 (4): e0005498. <a href="https://doi.org/10.1371/journal.pntd.0005498">https://doi.org/10.1371/journal.pntd.0005498</a>.</p>
+</div>
+<div>
+<p>Xie, Yihui. 2015. <em>Dynamic Documents with R and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.name/knitr/">http://yihui.name/knitr/</a>.</p>
+</div>
+<div>
+<p>———. 2019. <em>Bookdown: Authoring Books and Technical Documents with R Markdown</em>. <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a>.</p>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="uc-tinh-c-mu.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/13-references.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["book_da_basic.pdf", "book_da_basic.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

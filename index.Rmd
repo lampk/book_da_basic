@@ -12,7 +12,7 @@ github-repo: orientrcu/book_da_basic
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 ---
 
-```{r setup, echo=FALSE}
+```{r setup2, echo=FALSE}
 library(tidyverse)
 library(lubridate)
 library(C306)
