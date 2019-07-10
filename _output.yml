@@ -1,6 +1,13 @@
-bookdown::tufte_html_book:
-    toc: yes
-    css: toc.css
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">Phân tích dữ liệu cơ bản</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+    download: ["pdf", "epub"]
 bookdown::pdf_book:
   base_format: tufte::tufte_book
   includes:

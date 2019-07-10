@@ -1,5 +1,12 @@
 # Giới thiệu về phân tích dữ liệu {#intro}
 
+Phân tích dữ liệu có thể được chia làm hai giai đoạn chính:
+
+* Giai đoạn ban đầu: bao gồm hai giai đoạn nhỏ:
+    + Kiểm tra và làm sạch số liệu
+    + Chuẩn bị dữ liệu cho phân tích
+    
+* Giai đoạn phân tích thực sự
 
 You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
 
