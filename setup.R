@@ -9,3 +9,9 @@ file.create('.nojekyll')
 ## 7. add output_dir: "docs" to the configuration file _bookdown.yml
 
 bookdown::render_book(input = "index.Rmd", output_format = "bookdown::pdf_book", output_dir = "docs")
+
+## create bib file
+library(knitcitations)
+refs <- lapply(c("10.1371/journal.pntd.0005498"), bib_metadata)
+write.bibtex(refs[[1]], file="refs.bib")
+

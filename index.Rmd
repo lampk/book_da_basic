@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-bibliography: [book.bib, packages.bib]
+bibliography: [book.bib, packages.bib, refs.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: lampk/book_da_basic
@@ -25,6 +25,10 @@ Test
     + Lý thuyết kết hợp với ví dụ thực tế
     + Thực hành: R commander
 * Đóng góp của nhóm tác giả
+
+## Dữ liệu sử dụng trong sách
+
+Để minh hoạ cho các nội dung được trình bày, chúng tôi sử dụng các ví dụ thực tế, được phân tích bằng phần mềm R, trên bộ dữ liệu của một đoàn hệ tiền cứu trên trẻ nhập viện với chẩn đoán lâm sàng là sốt xuất huyết tại Bệnh viện Bệnh Nhiệt đới TP HCM từ năm 2001 đến năm 2009. Bộ dữ liệu này được công bố cùng với bài báo trình bày kết quả phân tích của nghiên cứu này [@Lam_2017]. Truy cập website của bài báo <https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0005498> để tải về bộ dữ liệu này.
 
 This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
 
