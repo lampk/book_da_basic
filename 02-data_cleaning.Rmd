@@ -186,6 +186,7 @@ Tùy theo phân loại ở bước chẩn đoán lỗi, chúng ta sẽ có cách
 * Không chắc: cân nhắc giữa giữ nguyên và xoá hẳn giá trị này.
 
 Các bước trên và mọi thay đổi trong bộ dữ liệu nên được ghi nhận lại với các thông tin như:
+
 * Lỗi tìm thấy là gì? (loại lỗi)
 * Lỗi ở đâu? (biến số liên quan, mã số nghiên cứu liên quan)
 * Chẩn đoán lỗi là gì?
