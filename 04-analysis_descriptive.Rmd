@@ -79,7 +79,7 @@ df <- rnorm(1000, 45, 2)
 hist(df, xlab = "Hct (%)", ylab = "Tần số", main = NULL)
 ```
 
-Ví dụ trên thể hiện phân phối của biến dung tích hồng cầu (Hct). Biến này có thể có các giá trị từ 38 đến 52, trong đó tần suất để dung tích hồng cầu là 44-46 là lớn nhất, tần suất của một giá trị được thể hiện bằng độ cao của các cột trong biểu đồ.
+Ví dụ trên thể hiện phân phối của biến dung tích hồng cầu (Hct). Biến này có thể có các giá trị từ 38% đến 52%, trong đó tần suất để dung tích hồng cầu là 44-46% là lớn nhất, tần suất của một giá trị được thể hiện bằng độ cao của các cột trong biểu đồ.
 
 Biểu đồ phân phối của biến dung tích hồng cầu cũng là một ví dụ điển hình của phân phối bình thường (normal distribution) rất phổ biến và thường được nhắc đến trong thống kê. Phân phối bình thường có các đặc tính đặc trưng về mặt toán học (trung bình, độ lệch chuẩn) và là cơ sở của rất nhiều các phép kiểm định, mô hình thống kê.
 
@@ -95,8 +95,8 @@ barplot(cannang_kg, names.arg = c("A", "B", "C", "D"), ylab = "Cân nặng")
 
 ### Chỉ số
 
-* Tần số
-* Tỷ lệ phần trăm
+* Tần số: là số lần xuất hiện của một giá trị.
+* Tỷ lệ phần trăm: là tỷ lệ giữa tần số của một giá trị so với tổng số giá trị.
 
 ## Mô tả biến số liên tục
 
@@ -177,11 +177,11 @@ Một số tính chất của trung vị:
 
 **Độ lệch chuẩn (standard deviation, SD)**
 
-Nếu dữ liệu xấp xỉ tuân theo phân phối bình thường (một đỉnh, đối xứng, không nhiều giá trị ngoại lai), thì 
+Nếu dữ liệu xấp xỉ tuân theo phân phối bình thường (một đỉnh, đối xứng, không nhiều giá trị ngoại lai), thì có thể mô tả dữ liệu bằng độ lệch chuẩn.
 * ~68% quan sát nằm trong khoảng +/- 1SD
 * ~95% quan sát nằm trong khoảng +/- 2SD
 
-**Khoảng tứ phân vị (IQR)**
+**Khoảng tứ phân vị (interquartile range, IQR)**
 
 * Phân vị thấp (Q1): giá trị mà 25% số giá trị quan sát nhỏ hơn
 * Phân vị cao (Q3): giá trị mà 25% số giá trị quan sát lớn hơn
