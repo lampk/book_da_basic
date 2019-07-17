@@ -1,9 +1,77 @@
 # Kiểm định giả thuyết thống kê
 
-## Nội dung dự kiến
+## Nguyên tắc kiểm định thống kê
 
-* Nguyên tắc kiểm định thống kê
-* Tổng quan về các kiểm định thống kê thường gặp
-* Trị số p: ý nghĩa và giá trị
-* Mối quan hệ giữa trị số p và khoảng tin cậy
+Giả sử ta muốn tìm hiểu mối liên quan giữa độ cô đặc máu (hemoconcentration) và sốc sốt xuất huyết ở đối tượng trẻ em từ 5-15 tuổi nhập viện vì sốt xuất huyết. Nghiên cứu được tiến hành bằng cách chọn 500 bệnh nhân là trẻ em trong lứa tuổi từ 5-15 nhập viện với chẩn đoán sốt xuất huyết và ghi nhận lại độ cô đặc máu. Sau khi theo dõi, số bệnh nhân trong mẫu nghiên cứu được chia thành 2 nhóm là có sốc và không sốc.
+
+Trong một nghiên cứu ở bệnh viện A, độ cô đặc máu trung bình của nhóm sốc là 4.93 và của nhóm không sốc là 2.57. Trong một nghiên cứu khác, nhóm nghiên cứu thuộc bệnh viện B lại ghi nhận độ cô đặc máu trung bình của nhóm sốc là 4.22 và của nhóm không sốc là 1.07. Kết quả các nhóm nghiên cứu ở nhiều địa điểm khác nhau được tổng hợp trong bảng sau:
+
+```{r, echo = F}
+dat <- data.frame(bv = c("A", "B", "C", "D", "E", "F"),
+                  mau = rep(500, 6),
+                  soc = c(4.93, 4.22, 0.56, 1.14, 2.47, 5.04),
+                  kosoc = c(2.57, 1.07, 3.08, 3.67, 4.18, 3.39))
+dat$hieuso <- dat$soc - dat$kosoc
+knitr::kable(
+  dat, caption = 'Tổng hợp kết quả nghiên cứu ở các bệnh viện',
+  booktabs = TRUE
+)
+```
+
+Nếu không có sự khác biệt về độ cô đặc máu trung bình giữa hai nhóm sốc và không sốc, thì chúng ta có thể kỳ vọng rằng hiệu số giữa giá trị độ cô đặc máu trung bình giữa hai nhóm sẽ bằng 0. Tuy nhiên trên thực tế, do tác động của một số yếu tố khách quan và chủ quan mà nhà nghiên cứu khó có thể kiểm soát được hết, hay còn gọi là các sai số ngẫu nhiên, hiệu số này có thể lớn hơn hoặc nhỏ hơn 0 một chút, nhưng vẫn dao động xung quanh giá trị 0.
+
+```{r, echo = F}
+set.seed(42)
+a <- rnorm(10000, 0, 2.44)
+p <- hist(a, breaks = 40, main = NULL, xlab = NULL, ylab = NULL, axes = F)
+axis(1)
+```
+
+Xét kết quả nghiên cứu ở bệnh viện A, hiệu số giữa độ cô đặc máu trung bình giữa hai nhóm là 2.35.
+
+```{r, echo = F}
+set.seed(42)
+a <- rnorm(10000, 0, 2.44)
+p <- hist(a, breaks = 40, main = NULL, xlab = NULL, ylab = NULL, axes = F)
+axis(1)
+abline(v=2.35,col="blue")
+```
+
+
+Các bước tiến hành kiểm định thống kê:
+
+Phát biểu giả thuyết vô hiệu (null hypothesis): không có sự khác biệt giữa hai nhóm.
+
+*Tại sao lại cần phải phát biểu giả thuyết là hai nhóm không có sự khác biệt mà không phải là hai nhóm có khác biệt?* Vì chỉ khi phát biểu hai nhóm không có khác biệt, mới có thể biểu diễn phát biểu này dưới dạng biểu thức:
+
+Trung bình (nhóm A) = Trung bình (nhóm B)
+
+hay:
+
+Trung bình (nhóm A) - Trung bình (nhóm B) = 0
+
+Nếu ta chọn phát biểu ban đầu là giữa hai nhóm có sự khác biệt, thì sự khác biệt là bao nhiêu mới đủ lớn? Dựa vào đâu để chọn con số đó? Vì vậy giả thuyết vô hiệu là sự lựa chọn phù hợp cho các tình huống cần so sánh.
+
+Nếu null hypothesis là đúng:
+
+* Xác định test statistic: t statistic
+* Xác định phân phối của test statistic: phân phối t
+* Tính test statistic trong mẫu
+* Tính xác suất kết quả xa hơn test statistic trong mẫu (p)
+
+Kết luận
+
+* p càng nhỏ: null hypothesis càng không phù hợp
+* p càng lớn: null hypothesis càng phù hợp
+
+## Tổng quan về các kiểm định thống kê thường gặp
+
+
+
+## Trị số p: ý nghĩa và giá trị
+
+
+
+## Mối quan hệ giữa trị số p và khoảng tin cậy
+
 
