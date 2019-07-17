@@ -89,7 +89,7 @@ Biểu đồ phân phối của biến dung tích hồng cầu cũng là một v
 
 ```{r, echo = FALSE}
 cannang_kg  <- c(10, 50, 20, 20)
-barplot(cannang_kg, names.arg = c("A", "B", "C", "D"), ylab = "Cân nặng")
+barplot(cannang_kg, names.arg = c("A", "B", "C", "D"), ylab = "Cân nặng (kg)")
 ```
 
 
