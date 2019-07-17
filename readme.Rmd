@@ -1,0 +1,12 @@
+---
+title: "Data analysis (basic)"
+author: "LPK"
+date: "7/10/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This book aims to provide tips in doing basic data analysis

@@ -200,3 +200,11 @@ Vấn đề này đặc biệt quan trọng khi làm việc trong một nhóm v�
 ```{r documentclean, fig.cap="File ghi nhận việc kiểm tra và làm sạch dữ liệu", echo=FALSE}
 knitr::include_graphics("figures/02_04.png")
 ```
+
+## Tai lieu tham khao
+
+Tham khao them cac tai lieu sau: 
+
+Sach: @Loo_2018, @Osborne_2013, @Broeck_2013 (chapter 20: Data cleaning), @Ahrens_2013 (chapter 27: Data Management in Epidemiology), @Macfarlane_2019, @Myatt_2014, @Prokscha_2011, @Dasu_2003, @Tukey_1977, @Huber_2011, @Chatfield_1988, @Ranganathan_2018
+
+Bai bao: @Broeck_2005, @Sauerbrei_2014, @Sauerbrei_2017a, @Sauerbrei_2017b, @Huebner_2016, @Huebner_2018, @Schmidt_2018
