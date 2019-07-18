@@ -54,8 +54,8 @@ Nếu ta chọn phát biểu ban đầu là giữa hai nhóm có sự khác bi�
 
 Nếu null hypothesis là đúng:
 
-* Xác định test statistic: t statistic
-* Xác định phân phối của test statistic: phân phối t
+* Xác định test statistic
+* Xác định phân phối của test statistic
 * Tính test statistic trong mẫu
 * Tính xác suất kết quả xa hơn test statistic trong mẫu (p)
 
@@ -66,12 +66,34 @@ Kết luận
 
 ## Tổng quan về các kiểm định thống kê thường gặp
 
+**Phép kiểm t**
 
+Null hypothesis: Trung bình (nhóm A) = Trung bình (nhóm B) 
+
+**Phép kiểm Chi bình phương**
+
+Null hypothesis: Tỷ lệ biến cố (nhóm A) = Tỷ lệ biến cố (nhóm B)
+
+**Phép kiểm Mann-Whitney (Wilcoxon rank sum)**
+
+Null hypothesis: Phân phối (nhóm A) = Phân phối (nhóm B)
+
+**Các phép kiểm cho phân phối bình thường**
+
+**Phép kiểm Shapiro-Wilk**
+
+Null hypothesis: X theo phân phối bình thường (dưới góc độ AOV)
+
+**Phép kiểm Kolmogorov-Smirnov**
+
+Null hypothesis: X theo phân phối bình thường (dưới góc độ ECF)
 
 ## Trị số p: ý nghĩa và giá trị
 
-
+Nếu null hypothesis là đúng (không có khác biệt giữa hai nhóm), xác suất để quan sát được kết quả như đang có hoặc xa hơn là p.
 
 ## Mối quan hệ giữa trị số p và khoảng tin cậy
 
+Nếu lặp lại thiết kế nghiên cứu 100 lần, thì có 95 lần kết quả nghiên cứu sẽ nằm trong khoảng tin cậy 95%.
 
+95% khả năng là khoảng giá trị (-2.42, 7.13) có chứa giá trị khác biệt về hemoconcentration thực sự trong dân số
