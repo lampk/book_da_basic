@@ -1,8 +1,71 @@
 # Đọc và diễn giải kết quả phân tích, Lập kế hoạch phân tích
 
-## Nội dung dự kiến
+## Kế hoạch phân tích là gì?
 
-* Kế hoạch phân tích là gì?
-* Vì sao phải lập kế hoạch phân tích?
-* Lập kế hoạch phân tích như thế nào? WHO-WHAT-WHEN-WHERE-HOW
-* Kế hoạch phân tích mẫu
+Kế hoạch phân tích là việc lập danh sách liệt kê những vấn đề sẽ đưa vào phân tích đi kèm với những phương pháp phân tích tương ứng dự định sẽ sử dụng, những vấn đề có thể mắc phải và cách khắc phục. Danh sách này được lập trong lúc tiến hành viết đề cương nghiên cứu, có thể trước hoặc sau khi lấy mẫu nhưng chắc chắn là trước khi có được dữ liệu.
+
+## Vì sao phải lập kế hoạch phân tích?
+
+Phân tích bằng các phép kiểm thống kê sử dụng kỹ thuật là bác bỏ hay không bác bỏ "giả thuyết không"" dựa vào ngưỡng xác suất p<0.05. Điều này đồng nghĩa với việc xác suất để một "giả thuyết không" bị bác bỏ một cách sai lầm là 0.05. Nói cách khác xác suất để việc bác bỏ một "giả thuyết không" là phù hợp là 0.95.
+
+Nếu ta có n "giả thuyết không", giả sử các "giả thuyết không" này độc lập với nhau thì xác suất để tất cả các giả thuyết không bị bác bỏ là phù hợp là 0.95^n.
+
+Xác suất để có ít nhất một trong số n ‘giả thuyết không’ độc lập với nhau này bị bác bỏ sai lầm là 1-0.95^n.
+
+Khi n càng tăng thì xác suất này càng lớn. Nói cách khác khi ta sử dụng phương pháp kiểm định trên nhiều giả thuyết đồng thời thì khi có càng nhiều giả thuyết, xác suất để một trong những giả thuyết bị bác bỏ một cách sai lầm càng lớn.
+
+**Một số trường hợp kiểm định nhiều giả thuyết:**
+
+* So sánh để chứng minh hai nhóm đối tượng không khác nhau: Cần so sánh trên nhiều tiêu chí để có thể đưa đến kết luận là hai nhóm đối tượng không khác nhau. Số tiêu chí này thường là nhiều.
+
+* So sánh từng cặp nhóm đối tượng: Có bao nhiêu đối tượng (cỡ mẫu) thì thực hiện bấy nhiêu phép kiểm.
+
+* Có nhiều tiêu chí (biến số phụ thuộc)
+
+* Phân tích dưới nhóm
+
+* So sánh các nhóm đối tượng ở nhiều thời điểm khác nhau
+
+* Di truyền học, GWAS: So sánh các đột biến di truyền mà phổ biến nhất là so sánh các đa hình đơn nucleotide (SNPs, single nucleotide polymorphisms) giữa hai nhóm bệnh và nhóm chứng, mà với mỗi SNP ta sẽ thực hiện một phép kiểm. Trên thực tế, số SNPs lớn hơn rất nhiều so với số mẫu thu được.
+
+* “Câu cá”: Cố tình thực hiện nhiều phép kiểm liên tục để tìm ra yếu tố có sự khác biệt, hay có mối liên quan đến kết cuộc.
+
+Để khắc phục các trường hợp kiểm định nhiều giả thuyết, có một số cách giải quyết như sau:
+
+* Giới hạn số lượng phép kiểm
+
+  + Lập kế hoạch trước khi tiến hành phân tích
+
+  + Phân biệt rõ phân tích định trước, phân tích thăm dò
+
+* Sử dụng phương pháp thống kê chuyên biệt để hiệu chỉnh
+
+## Lập kế hoạch phân tích như thế nào? WHO-WHAT-WHEN-WHERE-HOW
+
+Kế hoạch phân tích cơ bản bao gồm:
+
+* Người viết, ngày viết, phiên bản
+
+* Mục tiêu
+
+* Phương pháp
+
++ Dân số phân tích (analysis population)
+
++ Nguồn dữ liệu – chuẩn bị dữ liệu
+
++ Người phân tích, phần mềm phân tích
+
++ Các biến số liên quan
+
++ Phương pháp phân tích: Liệt kê các phương pháp cụ thể và tương ứng cho mỗi biến số quan tâm. Ghi chú rõ việc sẽ sử dụng phân tích mô tả hay sử dụng mô hình hoặc kiểm định.
+
++ Các vấn đề khác và hướng giải quyết: dữ liệu bị thiếu (missing data), phân tích kiểm chứng (sensitivity analysis)
+
+* Bảng/Hình câm
+
+* Tài liệu tham khảo
+
+* Phụ lục
+
+## Kế hoạch phân tích mẫu
