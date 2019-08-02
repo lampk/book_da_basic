@@ -24,7 +24,7 @@
 <meta name="author" content="Phùng Khánh Lâm, Ong Phúc Thịnh" />
 
 
-<meta name="date" content="2019-08-01" />
+<meta name="date" content="2019-08-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -256,7 +256,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li><p>Dễ thấy hàm lượng thông tin chứa trong mỗi loại biến số giảm dần theo thứ tự sau: Biến liên tục &gt; Biến phân nhóm có thứ tự &gt; Biến phân nhóm không thứ tự &gt; Biến nhị giá. Trong mọi trường hợp có thể thu thập được biến số dưới dạng biến liên tục thì nên thu thập luôn chứ không nên phân nhóm ra. Việc phân nhóm có thể thực hiện khi phân tích. Biến liên tục có thể phân nhóm nhưng biến phân nhóm không thể chuyển ngược trở lại thành biến liên tục được.</p></li>
 </ul>
-<p><strong>Precision/Reliability, Accuracy/Validity</strong></p>
+<p><strong>Độ tin cậy (Precision/Reliability) và tính giá trị (Accuracy/Validity)</strong></p>
+<p>Độ tin cậy là sự hằng định (consistency) hay mức độ ổn định của một đo lường qua nhiều lần đo khác nhau. Nói cách khác, khi lặp lại việc đo lường hay thu thập một dữ liệu (với điều kiện là dữ liệu này không thay đổi nhiều theo thời gian, ví dụ như đo lại chiều cao của người trưởng thành sau 1 tháng) trên chính đối tượng đó thêm một lần nữa, thì một CRF tốt sẽ cho kết quả không sai khác quá mức so với lần đầu tiên. Còn tính giá trị là khả năng một bộ công cụ có thể đo được vấn đề mà nó được tạo ra để đo lường. Độ tin cậy và tính giá trị được thể hiện qua hình sau:</p>
+<p><img src="figures/09_01.png" /><!-- --></p>
+<p>Ở bia bắn thứ nhất, sau 5 lần bằn, các lỗ đạn không trúng hồng tâm nhưng nằm rất gần nhau. Đây là ví dụ cho một công cụ có độ tin cậy cao, nhưng tính giá trị không cao (không trúng vào hồng tâm).</p>
+<p>Ở bia bắn thứ hai, sau 4 lần bắn, các lỗ đạn nằm rất xa nhau tuy nhiên tất cả đều nằm rất gần mép của tấm bia. Nếu mục tiêu là bắn vào mép của tấm bia thì đây là ví dụ cho thấy công cụ có tính giá trị cao (bắn được vào mục tiêu) nhưng độ tin cậy thấp (kết quả đo sau nhiều lần lặp lại không thống nhất).</p>
+<p>Ở bia bắn thứ ba, sau 5 lần bắn, các lỗ đạn vừa trúng vào hồng tâm (mục tiêu cần đo), vừa rất ổn định (cả 5 lần bắn đều trúng vào hồng tâm). Đây là ví dụ cho một công cụ vừa có độ tin cậy cao, vừa có tính giá trị cao.</p>
+<p>Ở bia bắn cuối cùng, sau 4 lần bắn, các lỗ đạn vừa không trúng vào một mục tiêu cụ thể nào, vừa nằm rải rác xa nhau không có tính ổn định (có lỗ thì ở mép tấm bia, có lỗ thì xích vào gần hồng tâm). Đây là ví dụ cho một công cụ vừa có độ tin cậy thấp, vừa có tính giá trị thấp.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Reliability</th>
+<th align="left">Validity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Kh&lt;U+1EA3&gt; nang l&lt;U+1EB7&gt;p l&lt;U+1EA1&gt;i (reproducibility)</td>
+<td align="left">Ðo du&lt;U+1EE3&gt;c cái mu&lt;U+1ED1&gt;n do</td>
+</tr>
+<tr class="even">
+<td align="left">Random error (chance)</td>
+<td align="left">Systematic error (bias)</td>
+</tr>
+<tr class="odd">
+<td align="left">Kh&lt;U+1EA3&gt; nang u&lt;U+1EDB&gt;c tính s&lt;U+1ED1&gt; do</td>
+<td align="left">Giá tr&lt;U+1ECB&gt; c&lt;U+1EE7&gt;a k&lt;U+1EBF&gt;t lu&lt;U+1EAD&gt;n</td>
+</tr>
+<tr class="even">
+<td align="left">Ngu&lt;U+1EDD&gt;i quan sát/l&lt;U+1EA5&gt;y s&lt;U+1ED1&gt; li&lt;U+1EC7&gt;u: c&lt;U+1EA7&gt;n dào t&lt;U+1EA1&gt;o, t&lt;U+1EAD&gt;p hu&lt;U+1EA5&gt;n k&lt;U+1EF9&gt; nang</td>
+<td align="left">Ngu&lt;U+1EDD&gt;i quan sát/l&lt;U+1EA5&gt;y s&lt;U+1ED1&gt; li&lt;U+1EC7&gt;u: làm mù, SOP, t&lt;U+1EAD&gt;p hu&lt;U+1EA5&gt;n</td>
+</tr>
+<tr class="odd">
+<td align="left">Ð&lt;U+1ED1&gt;i tu&lt;U+1EE3&gt;ng: k&lt;U+1EF9&gt; thu&lt;U+1EAD&gt;t/b&lt;U+1EA3&gt;n ch&lt;U+1EA5&gt;t -&gt; l&lt;U+1EF1&gt;a ch&lt;U+1ECD&gt;n, l&lt;U+1EB7&gt;p l&lt;U+1EA1&gt;i</td>
+<td align="left">Ð&lt;U+1ED1&gt;i tu&lt;U+1EE3&gt;ng: khách quan</td>
+</tr>
+<tr class="even">
+<td align="left">Công c&lt;U+1EE5&gt; thu th&lt;U+1EAD&gt;p: thi&lt;U+1EBF&gt;t k&lt;U+1EBF&gt; rõ ràng, don gi&lt;U+1EA3&gt;n, h&lt;U+1EA1&gt;n ch&lt;U+1EBF&gt; sai sót</td>
+<td align="left">Công c&lt;U+1EE5&gt; thu th&lt;U+1EAD&gt;p: calibration, phù h&lt;U+1EE3&gt;p</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="hinh-thc" class="section level3">
 <h3><span class="header-section-number">9.1.2</span> Hình thức</h3>
@@ -264,10 +304,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="phuong-phap-thu-thp-d-liu" class="section level2">
 <h2><span class="header-section-number">9.2</span> Phương pháp thu thập dữ liệu</h2>
+<p>Hiện nay có thể thu thập dữ liệu trên giấy hoặc điện tử (thông qua các biểu mẫu thiết kế sẵn mà người thu thập có thể truy cập thông qua máy tính bảng, điện thoại).</p>
 </div>
 <div id="nhp-liu" class="section level2">
 <h2><span class="header-section-number">9.3</span> Nhập liệu</h2>
-<p>Epidata</p>
+<p>Có nhiều phần mềm nhập liệu khác nhau, nhưng tất cả đều tiến hành theo ba bước cụ thể: tạo form để nhập liệu, nhập liệu vào form này, trích xuất dữ liệu. Việc sử dụng các phần mềm nhập liệu thay vì nhập trực tiếp vào bảng như Excel có ưu điểm là thiết kế trực quan và các chức năng giúp hạn chế sai sót cho người sử dụng. Những phần mềm nhập liệu phổ biến thường được sử dụng hiện nay:</p>
+<p><strong>Epidata</strong></p>
+<p><img src="figures/09_02.png" /><!-- --></p>
+<p>Epidata là phần mềm miễn phí và được sử dụng phổ biến nhất hiện nay. Epidata có thể xuất ra nhiều loại file data phổ biến tương thích với các phần mềm phân tích thống kê thông dụng. Có thể tải về tại: <a href="https://www.epidata.dk/" class="uri">https://www.epidata.dk/</a></p>
+<p><strong>Epi Info</strong></p>
+<p><img src="figures/09_03.png" /><!-- --></p>
+<p>Có thế tải về tại: <a href="https://www.cdc.gov/epiinfo/support/downloads.html" class="uri">https://www.cdc.gov/epiinfo/support/downloads.html</a></p>
+<p><strong>Google Form</strong></p>
+<p><img src="figures/09_04.png" /><!-- --></p>
 
 </div>
 </div>
