@@ -1,4 +1,4 @@
-# Kiểm tra và làm sạch dữ liệu {#data_cleaning}
+# Kiểm tra và làm sạch dữ liệu {#datacleaning}
 
 Đây là bước đầu tiên nên được thực hiện khi nhận được một bộ số liệu, với mục tiêu là xây dựng được bộ số liệu sạch cho phân tích. 
 
@@ -205,6 +205,6 @@ knitr::include_graphics("figures/02_04.png")
 
 Tham khao them cac tai lieu sau: 
 
-Sach: @Loo_2018, @Osborne_2013, @Broeck_2013 (chapter 20: Data cleaning), @Ahrens_2013 (chapter 27: Data Management in Epidemiology), @Macfarlane_2019, @Myatt_2014, @Prokscha_2011, @Dasu_2003, @Tukey_1977, @Huber_2011, @Chatfield_1988, @Ranganathan_2018
+Sach: @Loo_2018, @Osborne_2013, @Broeck_2013 (chapter 20: Data cleaning), @Ahrens_2013 (chapter 27: Data Management in Epidemiology), @Macfarlane_2019, @Myatt_2014, @Prokscha_2011, @Dasu_2003, @Tukey_1977, @Huber_2011, @Chatfield_1988, @Ranganathan_2018, @Huber_1981, @Rousseeuw_1987
 
 Bai bao: @Broeck_2005, @Sauerbrei_2014, @Sauerbrei_2017a, @Sauerbrei_2017b, @Huebner_2016, @Huebner_2018, @Schmidt_2018

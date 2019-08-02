@@ -12,3 +12,6 @@
 * Cách diễn giải kết quả từ mô hình thống kê
 * Cách lựa chọn mô hình thống kê phù hợp
 
+## Tham khao
+
+* @Rodgers_1988

@@ -1,87 +1,64 @@
 # Phân tích mô tả
 
-* **Mục tiêu**
+## Vì sao phải thực hiện phân tích mô tả?
 
-Mô tả một cách đầy đủ, trung thực và súc tích bộ dữ liệu đang có
+Phân tích mô tả là bước phân tích đầu tiên và quan trọng trong mỗi phân tích, nhằm mục tiêu mô tả một cách **đầy đủ**, **trung thực** và **súc tích** về bộ dữ liệu đang có.
 
-* **Ứng dụng**
+Mặc dù phân tích mô tả thường bị xem nhẹ, việc thực hiện giai đoạn phân tích này đem lại những ứng dụng to lớn: 
 
-  + Kiểm tra dữ liệu
-  + Hiểu dữ liệu
-  + Lựa chọn hướng phân tích và phương pháp phân tích phù hợp
-  
-## Một số khái niệm
+* *Kiểm tra dữ liệu*: các công cụ của thống kê mô tả (các chỉ số thống kê, biểu đồ) được sử dụng rất hữu hiệu để kiểm tra và làm sạch dữ liệu (xem thêm Chương \@ref(datacleaning)).
 
-### Bảng dữ liệu
+* *Hiểu dữ liệu*: chúng ta cần hiểu dữ liệu của mình trước khi tiến hành phân tích chính thức. Các phân tích mô tả tuy đơn giản nhưng có thể giúp cung cấp thông tin quan trọng về dữ liệu một cách nhanh chóng, giúp chúng ta hiểu hơn về bộ dữ liệu mà mình đang phân tích. 
 
-Bảng dữ liệu (dataset) là một bảng được tạo thành từ nhiều giá trị (value). Mỗi giá trị thuộc về một biến số (variable) và một đơn vị quan sát (observation unit). Các giá trị trong cùng một biến số phải có cùng thuộc tính (attribute). Một bảng dữ liệu điển hình có cấu trúc như sau gọi là bảng dữ liệu gọn gàng (tidy data).
+* *Lựa chọn hướng phân tích và phương pháp phân tích phù hợp*: thống kê mô tả thường được dùng để đánh giá sự phù hợp của các giả định về dữ liệu (ví dụ như phân phối của các biến số), từ đó góp phần định hướng phương pháp phân tích phù hợp.
 
-```{r, tidy=FALSE, echo=FALSE}
-dat <- data.frame(id = c("001", "002", "003", "003"),
-                  ngaysinh = c("2013-05-08", "2018-12-03", "2013-12-20", "2013-12-20"),
-                  ngaync   = c(NA, "2018-02-03", "2018-12-13", "2018-12-13"),
-                  gioitinh = c("Nam", "Nữ", "Nam", "Nam"),
-                  hct0     = c(49, 250, 50, 50),
-                  cannang_kg  = c(10, 50, 20, 20))
+## Ví dụ Anscombe
+
+```{r anscombedata}
+data("anscombe")
 knitr::kable(
-  dat, caption = 'Ví dụ về bảng dữ liệu',
+  dat, caption = 'Dữ liệu Anscombe',
   booktabs = TRUE
 )
 ```
 
-Trong bảng dữ liệu gọn gàng, mỗi cột (column) là một biến số. Ví dụ trong bảng trên ta thấy ngaysinh, gioitinh là các biến số. Các giá trị nằm trong cùng một biến số có cùng thuộc tính, ví dụ các giá trị trong biến gioitinh có cùng thuộc tính là chuỗi ký tự, hoặc biến cân nặng chỉ gồm các giá trị là số.
-
-Mỗi hàng ngang (row) là một đơn vị quan sát. Các đơn vị quan sát thường được đánh số hoặc gán mã định danh để dễ dàng phân biệt với nhau. Mã số này được chứa trong một biến số và thường là biến đầu tiên. Trong bảng ví dụ trên, đơn vị quan sát thứ nhất có mã số 001, đơn vị quan sát thứ hai có mã số 002.
-
-### Biến số
-
-#### Phân loại biến số
-
-Có nhiều cách phân loại biến số khác nhau, cách phân loại sau đây thường được trình bày và ứng dụng trong thực tế.
-
-* **Nhị giá**: biến số có 2 giá trị (VD: biến tử vong gồm 2 giá trị là sống/chết)
-* **Phân nhóm**: có >2 giá trị, không có thứ tự (VD: biến quốc gia có thể có các giá trị Việt Nam, Lào, Thái Lan...)
-* **Thứ tự**: các giá trị có thứ tự (VD: nhóm tuổi (từ 18-25, 25-45, trên 45), mức độ hài lòng (không hài lòng, trung bình, rất hài lòng))
-* **Liên tục**: có thang đo và đơn vị (VD: tuổi)
-
-#### Mã hóa biến số
-
-Biến số phân nhóm: Thường được mã hoá thành con số, ví dụ mã hóa các giá trị của biến quốc gia dưới dạng Việt Nam = 1, Lào = 2, Thái Lan = 3. Tuy nhiên, điều đó không biến chúng thành biến số liên tục. Ta không thể thực hiện các phép tính toán trên biến số mã hóa này, như 1 + 2 = 3, nhưng trong ví dụ trên thì Việt Nam + Lào không thể = Thái Lan.
-
-Dữ liệu bị thiếu: Thường được mã hoá riêng, một cách phổ biến là mã hóa một giá trị lớn bất thường (9999) cho dữ liệu bị thiếu khi thu thập.
-
-Trong phân tích mô tả, cần mô tả số lượng dữ liệu bị thiếu cho từng biến số. Dữ liệu bị thiếu thường bị loại ra khỏi phân tích (do người thực hiện, hoặc do phần mềm phân tích), do đó nếu không tiến hành mô tả số lượng dữ liệu bị thiếu trước khi phân tích thì kết quả phân tích có thể bị sai lệch hoặc bị hiểu nhầm.
-
-#### Lựa chọn biến số cho phân tích
-
-Trong bảng dữ liệu có thể bao gồm rất nhiều biến số, tuy nhiên không phải bất cứ biến số nào cũng có giá trị và nên đưa vào phân tích. Cần lựa chọn những biến số quan trọng dựa trên một kế hoạch phân tích đã lập ra từ trước. 
-
-**Biến số chính**
-
-Được xác định dựa vào câu hỏi nghiên cứu hay giả thuyết nghiên cứu. Các biến số chính thường được chia thành biến số độc lập và biến số phụ thuộc.
-
-* Biến số độc lập (independent variable): là những biến số thể hiện yếu tố có mối liên quan (association) hay là nguyên nhân (causation) của kết cuộc quan tâm trong nghiên cứu.
-* Biến số phụ thuộc (dependent variable), còn gọi là biến số kết cuộc (outcome): là biến số thể hiện kết cuộc quan tâm trong nghiên cứu.
-
-**Các yếu tố gây nhiễu**
-
-Yếu tố gây nhiễu là các yếu tố vừa tác động lên biến số phụ thuộc, vừa có tác động lên biến số độc lập. Việc xác định yếu tố gây nhiễu cần phải dựa vào y văn hoặc kiến thức chuyên ngành. Nếu vấn đề nghiên cứu là vấn đề rất mới thì có thể dựa vào bộ dữ liệu sẵn có để xác định những yếu tố gây nhiễu tiềm năng.
-
-Số lượng biến số thường bị giới hạn bởi cỡ mẫu và đặc điểm của biến số phụ thuộc. Vì vậy không nên chọn các biến số đưa vào phân tích một cách tùy tiện, tràn lan mà nên chọn theo kế hoạch đã xác định từ ban đâu và luôn tập trung vào câu hỏi hay giả thuyết nguyên cứu để quyết định có nên đưa một biến nào đó vào phân tích hay không.
-
-## Phân phối thống kê
-
-Phân phối thống kê là sự mô tả các giá trị có thể có của một biến số, đi kèm với tần suất hay khả năng xuất hiện của mỗi giá trị.
-
-```{r, echo = FALSE}
-set.seed(42)
-df <- rnorm(1000, 45, 2)
-hist(df, xlab = "Hct (%)", ylab = "Tần số", main = NULL)
+```{r anscombe}
 ```
 
-Ví dụ trên thể hiện phân phối của biến dung tích hồng cầu (Hct). Biến này có thể có các giá trị từ 38% đến 52%, trong đó tần suất để dung tích hồng cầu là 44-46% là lớn nhất, tần suất của một giá trị được thể hiện bằng độ cao của các cột trong biểu đồ.
+## Nhắc lại về phân phối xác suất
 
-Biểu đồ phân phối của biến dung tích hồng cầu cũng là một ví dụ điển hình của phân phối bình thường (normal distribution) rất phổ biến và thường được nhắc đến trong thống kê. Phân phối bình thường có các đặc tính đặc trưng về mặt toán học (trung bình, độ lệch chuẩn) và là cơ sở của rất nhiều các phép kiểm định, mô hình thống kê.
+Vì trọng tâm của phân tích mô tả là mô tả các biến số trong bộ dữ liệu, cụ thể hơn là phân phối của các biến số đó, nên *phân phối xác suất* (probability distribution, probability density) là một khái niệm cần được làm rõ. Phân phối xác suất của một biến số là một công thức toán học mô tả xác suất xuất hiện của từng giá trị biến số (với biến số rời rạc) hoặc của từng khoảng giá trị biến số (với biến số liên tục) [@Everitt_2010]. Phối phối xác suất này có thể được biểu diễn bằng biểu đồ, và qua biểu đồ này chúng ta có thể thấy được các giá trị có thể có của một biến số, cùng với tần suất hay khả năng xuất hiện của mỗi giá trị đó.
+
+Dưới đây là một ví dụ về phân phối xác suất của biến số về số lượng tiểu cầu trong máu, trong bộ dữ liệu mẫu:
+
+```{r probdist, fig.cap="Phân phối xác suất của số lượng tiểu cầu trong máu ở bộ dữ liệu mẫu"}
+hist(baseline$plt/1000, xlab = "Số lượng tiểu cầu (1000/mm3)", ylab = "Tần số", main = NULL)
+```
+
+Vì số lượng tiểu cầu là biến số liên tục, giá trị của biến số này được chia thành những khoảng bằng nhau nhỏ hơn và tần số của mỗi khoảng giá trị được thể hiện bằng độ cao của các cột trong biểu đồ. Trong ví dụ trên có thể thấy, số lượng tiểu cầu trong máu của các đối tượng tham gia nghiên cứu dao động từ 0 đến khoảng 400,000/mm3. Trong đó, thường gặp nhất là khoảng giá trị từ 100,000 đến 150,000/mm3.
+
+### Phân phối bình thường
+
+Trong các phân phối xác suất, *phân phối bình thường* (normal distribution hay Gaussian distribution), hay được gọi là *phân phối chuẩn*, là phân phối xác suất thường được nhắc đến trong các phân tích thống kê. Với một biến số ngẫu nhiên $X$, nếu biến số này có phân phối bình thường, xác suất xuất hiện $f(x)$ cho giá trị $x$ của biến số đó được tính như sau [@Everitt_2010]:
+
+$$
+f(x) = \frac{1}{\sigma \sqrt{2\pi}} \left[-\frac{(x - \mu)^2}{2\sigma^2}\right]
+$$
+Trong đó $\mu$ và $\sigma$ lần lượt là trung bình và độ lệch chuẩn của $X$. 
+
+Về hình dạng, phân phối bình thường có hình dạng đặc trưng là hình chuông úp (bell-shape), cân xứng hai bên với đỉnh là giá trị trung bình. Hình minh hoạ dưới đây là phân phối của số lượng tiểu cầu, với 100,000 giá trị đo được lấy ngẫu nhiên từ một phân phối bình thường với trung bình là 134,000/mm3 và độ lệch chuẩn là 61,000/mm3:
+
+```{r normaldist, fig.cap="Phân phối xác suất của số lượng tiểu cầu được giả lập từ phân phối bình thường"}
+set.seed(100)
+pltran <- rnorm(n = 100000, mean = 134, sd = 61)
+hist(pltran, xlab = "Số lượng tiểu cầu (1000/mm3)", ylab = "Tần số", main = NULL)
+```
+Lưu ý vì đây chỉ đơn thuần là số liệu giả lập dựa trên công thức phân phối xác suất bình thường với trung bình là 134,000/mm3 và độ lệch chuẩn là 61,000/mm3 cho mục đích minh hoạ, có một số giá trị nằm trong khoảng -100 đến 0, vốn không thể xảy ra trong thực tế.
+
+Phân phối bình thường được biết đến rộng rãi và rất quan trọng trong thống kê vì những lý do sau:
+
+* Đơn giản về toán học: chỉ cần hai thông số là trung bình và độ lệch chuẩn, chúng ta có thể mô tả được toàn bộ phân phối.
+* Là cơ sở của rất nhiều các phương pháp thống kê, thông qua *định lý giới hạn trung tâm* (Central Limit Theorem), với nội dung chính là nếu một biến số ngẫu nhiên $Y$ có trung bình trong dân số là $\mu$ và độ lệch chuẩn trong dân số là $\sigma$ thì giá trị trung bình  $\bar{y}$, trong một mẫu gồm $n$ đối tượng, sẽ có phân phối xấp xỉ phân phối bình thường với trung bình $\mu$ và độ lệch chuẩn $\frac{\sigma}{\sqrt{n}}$ khi $n$ đủ lớn [@Everitt_2010].
 
 ## Mô tả biến số phân nhóm
 ### Biểu đồ
@@ -191,3 +168,23 @@ Nếu dữ liệu xấp xỉ tuân theo phân phối bình thường (một đ�
 
 * Cỡ mẫu rất nhỏ
 * Phụ thuộc vào cỡ mẫu
+
+## Phân phối chuẩn hay không chuẩn?
+
+## Tài liệu tham khảo
+
+### Data visualization
+
+* @Anscombe_1973
+* @Cook_1999
+* @Cook_1999b
+* @Cook_1997
+* @Cook_1996
+* @Cook_1998
+* @Cleveland_1993
+* @Cook_1994
+* @Cook_1982
+* @Tufte_1998
+* @Cook_2007
+* @Wickham_2009
+* @Wilkinson_2005

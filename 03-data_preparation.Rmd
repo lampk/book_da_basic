@@ -27,3 +27,28 @@ Ta có thể biến đổi dữ liệu từ có 4 cột này thành chỉ có 2 
 ![Ví dụ về dữ liệu dạng dài](figures/02_06.png)
 
 Các giá trị trong cột Method là nosmote_gbm, smote_gbm, nosmote_normalized_gbm, smote_normalized_gbm chính là tên của 4 cột ban đầu. Giá trị trong cột Value là những con số tương ứng với mỗi phương pháp trong Method. Việc biến đổi này không làm mất đi thông tin trong bộ dữ liệu mà chỉ làm thay đổi hình dạng trình bày thông tin. Dữ liệu to bè theo chiều ngang (gồm nhiều cột) gọi là dữ liệu dạng rộng (wide format). Dữ liệu sau khi biến đổi chỉ có 2 cột nhưng sẽ kéo dài xuống thành rất nhiều dòng gọi là dữ liệu dạng dài (long format).
+
+## Bảng dữ liệu gọn gàng (tidy data)
+
+Một bảng dữ liệu điển hình có cấu trúc như sau gọi là bảng dữ liệu gọn gàng (tidy data).
+
+```{r, tidy=FALSE, echo=FALSE}
+dat <- data.frame(id = c("001", "002", "003", "003"),
+                  ngaysinh = c("2013-05-08", "2018-12-03", "2013-12-20", "2013-12-20"),
+                  ngaync   = c(NA, "2018-02-03", "2018-12-13", "2018-12-13"),
+                  gioitinh = c("Nam", "Nữ", "Nam", "Nam"),
+                  hct0     = c(49, 250, 50, 50),
+                  cannang_kg  = c(10, 50, 20, 20))
+knitr::kable(
+  dat, caption = 'Ví dụ về bảng dữ liệu',
+  booktabs = TRUE
+)
+```
+
+Trong bảng dữ liệu gọn gàng, mỗi cột (column) là một biến số. Ví dụ trong bảng trên ta thấy ngaysinh, gioitinh là các biến số. Các giá trị nằm trong cùng một biến số có cùng thuộc tính, ví dụ các giá trị trong biến gioitinh có cùng thuộc tính là chuỗi ký tự, hoặc biến cân nặng chỉ gồm các giá trị là số.
+
+Mỗi hàng ngang (row) là một đơn vị quan sát. Các đơn vị quan sát thường được đánh số hoặc gán mã định danh để dễ dàng phân biệt với nhau. Mã số này được chứa trong một biến số và thường là biến đầu tiên. Trong bảng ví dụ trên, đơn vị quan sát thứ nhất có mã số 001, đơn vị quan sát thứ hai có mã số 002.
+
+## Ref
+
+* @Wickham_2017

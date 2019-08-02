@@ -1,0 +1,38 @@
+# Myths & common misunderstanding
+
+## Control & adjustment
+
+* Example
+
+```{r}
+data("iris")
+ggplot(iris, aes(x = Petal.Width, y = Sepal.Width)) +
+  geom_point(aes(color = Species)) +
+  geom_smooth(aes(group = Species, color = Species), method = "lm", formula = y ~ x, se = FALSE) +
+  geom_smooth(method = "lm", formula = y ~ x, se = FALSE, color = "black", linetype = 2) +
+  theme_bw()
+```
+
+
+* https://statmodeling.stat.columbia.edu/2019/01/25/regression-matching-weighting-whatever-dont-say-control-say-adjust/
+
+* https://twitter.com/statsepi/status/1148862004842643456
+* https://twitter.com/MarcusMunafo/status/1148867159470346242
+* @Westfall_2016
+* @Phillips_1991
+
+
+## Bias, Confounding, Effect modification, Collider
+
+* Example of collider
+    + @Richardson_2019
+    + @Gale_2017
+
+
+## Correlation & Causation
+
+## Tham khao
+
+* @Pearl_2018
+* @Westfall_2016
+* @Phillips_1991

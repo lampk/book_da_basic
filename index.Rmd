@@ -18,6 +18,9 @@ library(lubridate)
 library(C306)
 library(ggplot2)
 knitr::opts_chunk$set(out.width = '80%', fig.asp = .75, fig.align = 'center', warning = FALSE, message = FALSE) 
+data_path <- file.path("data", "journal.pntd.0005498.s003")
+baseline <- read.csv(file.path(data_path, "baseline.csv"))
+plt <- read.csv(file.path(data_path, "baseline.csv"))
 ```
 
 # Lời nói đầu {-}

@@ -1,0 +1,120 @@
+# New topics
+
+## Longitudinal data analysis
+
+* Time series analysis
+* Longitudinal data analysis
+* Intensive longitudinal data analysis
+
+## @Collins_2006: A CONCEPTUAL FRAMEWORK FOR LONGITUDINAL RESEARCH
+
+* Longitudinal  research  is  most  likely  to  approach  the  ideal  described  above when it is characterized by the seamless integration of three elements: ( a )a wellarticulated theoretical model of change observed using ( b )a temporal design that affords a clear and detailed view of the process, with the resulting data analyzed by means of ( c )a statistical model that is an operationalization of the theoretical model
+
+### Element 1: The Theoretical Model of Change
+
+* a clear and comprehensive statement about the nature of the change phenomenon that is to be observed
+
+* 2 general types of theoretical model
+    +  models in which the time-related change of primary interest is continuous
+    + those  in  which  it  is  characterized  by  movement  between  discrete  states
+
+### Element 2: The Temporal Design Used to Observe the Change Phenomenon
+
+* consisting of the timing, frequency, and spacing of observations in a longitudinal study.
+* the most appropriate temporal design is one chosen not primarily on the basis of logistics, but instead on the basis of correspondence with the theoretical model of change
+    + if the theoretical model suggests that change is rapid, or characterized by many ups and downs, then more frequent observation may be called for
+    + If periodicity is anticipated, then the exact timing of observation may be an important consideration.
+    + If there is a particular period of time during which some important event is anticipated, then more intensive observation may be advisable at that time
+
+* under many circumstances the impact can be considerable, resulting, for example, in failure to detect stages in a stage-sequential process, and incorrect conclusions about mediation
+
+* 2 general types of temporal design
+    + longitudinal panel design:  there are relatively few occasions of measurement, say eight or fewer, and the observations are separated by at least six months
+    + intensive longitudinal design: involving at least 20 occasions of measurement, spaced closely enough in time to provide a detailed look at change in the quantity being observed
+
+### Element 3: The Statistical Model of Change
+
+* fitting a model of the change process to empirical data.
+* every  approach  to  statistical  analysis  of  longitudinal  data  implicitly  or e xplicitly provides an operationalization of some model of the change process.
+* In successful longitudinal research, the operationalization provided by the statistical model corresponds to the theoretical model of change
+
+### Integration of the Three Elements
+
+#### CHANGE IN CONTINUOUS VARIABLES
+
+* commonly approach is growth curve models (eg. hierarchical linear models)
+
+* In Longitudinal Panel Designs
+    + PIECEWISE  GROWTH MODELS (DISCONTINUITY IN CONTINUOUS CHANGE:)
+    + AUTOREGRESSIVE AND HYBRID  MODELS (STABILITY  AND  GROWTH:)
+    + GROWTH  MIXTURE  MODELS (PA T TERNS  OF  GROWTH:)
+    
+* In AV ariation on Longitudinal Panel Designs: A cce lerated Longitudinal Designs 
+    + multiple  cohorts of  different  ages  are  observed  longitudinally  for  a  shorter  period  of  time.  The cohorts must be overlapping, so that for each cohort, there is at least one age at which at least one of the other cohorts is also observed
+    + a statistical approach is used to combine the cohorts and estimate a single growth trajectory, extending from the youngest age observed to the oldest
+    + makes the assumption that there is no age-by-cohort interaction affecting development; in other words, it assumes that a single growth trajectory can reasonably represent all the cohorts
+    + Ref: 
+        - Raudenbush, S. W., & Chan, W.-S. (1992). Growth curve analysis in accelerated longitudinal designs. Journal of Research in Crime and Delinquency, 29(4), 387–411. doi:10.1177/0022427892029004001
+        - Duncan, S. C., Duncan, T. E., & Hops, H. (1996). Analysis of longitudinal data within accelerated longitudinal designs. Psychological Methods, 1(3), 236–248. doi:10.1037/1082-989X.1.3.236
+        - Duncan, T. E., & Duncan, S. C. (2004). An introduction to latent growth curve modeling. Behavior Therapy, 35(2), 333–363. doi:10.1016/S0005-7894(04)80042-X
+        - Miyazaki, Y., & Raudenbush, S. W. (2000). Tests for linkage of multiple cohorts in an accelerated longitudinal design. Psychological Methods, 5(1), 44–63. doi:10.1037//1082-989X.5.1.44
+        
+* In In te nsive Longitudinal Designs
+    + FUnctional data analysis
+        - A local linear estimation procedure for functional multilevel modeling
+    + DY N AMICAL  SYSTEMS: the familiar autoregressive model can be considered a type of dynamical system that self-regulates
+        - Boker, S. M., & Laurenceau, J.-P. (2006). Dynamical Systems Modeling: An Application to the Regulation of Intimacy and Disclosure in Marriage. In T. A. Walls & J. L. Schafer (Eds.), Models for intensive longitudinal data (pp. 195-218). New York, NY, US: Oxford University Press
+    
+## @Walls_2006: Models for Intensive Longitudinal Data
+
+* the mainstays of longitudinal analysis—multilevel models with random effects for individual subjects—could address some of these questions if they were creatively applied
+and extended, but they were clearly inadequate for handling other issues. Other methods, such as time series analysis or spatial analysis, on the other hand, are designed for large numbers of occasions, but typically involve only a single series rather than series from multiple subjects
+
+* intensive longitudinal data or ILD arise in any situation where quantitative or qualitative characteristics of multiple individuals or study units are recorded at more than a handful of time points. The number of occasions may be in the tens, hundreds, or thousands. The frequency or spacing of measurements in time may be regular or irregular, fixed or random, and the variables measured at each occasion may be few or many.We also consider ILD to include situations involving continuous-time measurement of recurrent events, provided that the
+period of measurement is long enough for a large number of these events to be potentially observed for each subject
+
+* ILD: the main characteristic is the presence of long, intensively measured, independent series or sets of series that potentially reflect complex patterns of change over time
+
+* The major differences between ILD and other kinds of longitudinal data are not tied to the dimensionality of the database. Rather, the features that make ILD unique and
+worthy of special consideration pertain to the scientific motivations for collecting them, the unusual nature of the hypotheses they are intended to address, and
+the complex features of the data that need to be revealed and parameterized by statistical models
+
+* Common theme
+    + the complexity and variety of individual trajectories and the need to move beyond simple time-graded effects: we often find that the shapes of these trajectories, even after smoothing over time, may vary wildly from one subject to another (Walls et al., forthcoming). With such strong variation, the relevance of a population-average time trend becomes questionable, because in comparison to the individual curves the average may be highly atypical. If the period of data collection represents a very narrow slice of the participants’ lifespan, a pattern of average growth may be irrelevant or undetectable; long-term trends may be swamped by short-term variation. Sometimes it is reasonable to completely remove any absolute measure of time from the mean structure and view each subject’s data as a realization of an autocorrelated process that is stable or stationary
+    + the need to rethink the role of time as a covariate: With ILD, there may be no obvious way to align the trajectories so that the time variable has an equivalent meaning across subjects; this problem is called curve registration. With high intensities of measurement, however, we may need to recognize that time is heterogeneous.
+    + effects of interest are often found in the covariance structure. With many waves of measurement, we may find that subjects vary not only in their means but also in their variances and covariances. Some individuals are stable, whereas others are erratic. Some may show strong positive relationships among measured variables, whereas others may show weak or negative relationships. If we seek to understand and explain this variation in the covariance structure, we can no longer treat that structure as a nuisance but must model it carefully and systematically.
+    + a focus on relationships that change over time. With intensive longitudinal measurement, however, we may have the opportunity to discover that the association not only varies among individuals, but also within individuals over time. Trends in association parameters are often complex, not easily described by simple time-by-covariate interactions, and we may need to consider models with nonparametrically time-varying coefficients.
+    + an interest in autodependence and regulatory mechanisms. Many analyses of ILD, however, involve issues of an autodependent or self-regulatory nature. How does a high level of a response at one occasion, or a change in response from one occasion to the next, influence the distribution of the response at later occasions
+    
+
+## Statistical approaches for medical device data
+
+### Properties of medical device data
+
+* "Change in stroke volume tends to be an indicator of heart failure. While specific values of stroke volume and heart rate vary by individual patients, normal ranges of these parameters are defined by physiology and general health. A performance comparison between the hemodynamic parameters of an individual patient and those of a larger population can suggest the onset (for example, normal and abnormal values of PCWP, SV, and HR)" [@Zaleski_2011]
+
+* "To be truly useful to the clinician, predictive models must be simple to use and broad in applicability: they must accommodate multivariate information taking into account multiple ailments or comorbidities and cohort behavior" [@Zaleski_2011]
+
+* "The use of clinical decision support systems within hospital environments, while growing, has yet to be universally accepted. Reasons vary, but range from reluctance to rely on “cookbook” medicine, lack of technical standards, limited resources to develop such systems within the scope of existing electronic medical records systems, and others [3]. More traditional or popular forms of decision support have included calculations, conditional expressions, and alert generation" [@Zaleski_2011]
+
+
+### Statistical approaches
+
+* "Techniques for processing of spatial and temporal data have traditionally included the Fourier transform and the wavelet transform. The Fourier transform is useful for analyzing the frequency components of temporal data that contains few transients. The wavelet transform provides the capability to address temporal and spatial transients in data. For this reason, and because medical data drawn from biomedical devices can experience both artifact and rapid changes for many reasons, a worked problem using the wavelet transform in discrete form is presented." [@Zaleski_2011]
+
+* "The discrete wavelet transform enables reconstruction of a signal from the temporal and spatial perspectives of the raw data. That is, the spatial nuances or shape of a given signal and the location in time in which these oddities occur can be recreated using wavelet transforms. Unlike Fourier series or transforms, which reflect only the frequency or spectral components of a signal, wavelets provide time and frequency localization of signal specifics, which is necessary to reconstruct time-varying, nonstationary processes [26, 27]. The discrete wavelet transform calculation
+is conducted with respect to specific basis functions" [@Zaleski_2011]
+
+* "One simple yet powerful basis function that has wide use is the Haar basis function, in which individual averages and differences (or details, as they are sometimes referred to in the field) are computed with respect to the raw signal data" [@Zaleski_2011]
+
+## References
+
+### Intensive longitudinal data analysis
+
+* www.intensivelongitudinal.com, @Bolger_2013
+* https://www.methodology.psu.edu/ra/ild, @Walls_2006
+* The Science and Theory of Real-Time Data Capture
+
+### Medical device data
+
+* @Zaleski_2011
