@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chương 5 Kiểm định giả thuyết thống kê | Phân tích số liệu cơ bản</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chương 5 Kiểm định giả thuyết thống kê | Phân tích số liệu cơ bản" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Phùng Khánh Lâm, Ong Phúc Thịnh" />
 
 
-<meta name="date" content="2019-07-16" />
+<meta name="date" content="2019-07-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -55,6 +55,7 @@ a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -132,20 +133,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#ni-dung-d-kin"><i class="fa fa-check"></i><b>0.1</b> Nội dung dự kiến</a></li>
 <li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#d-liu-s-dung-trong-sach"><i class="fa fa-check"></i><b>0.2</b> Dữ liệu sử dụng trong sách</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Giới thiệu về phân tích dữ liệu</a></li>
-<li class="chapter" data-level="2" data-path="data-cleaning.html"><a href="data-cleaning.html"><i class="fa fa-check"></i><b>2</b> Kiểm tra và làm sạch dữ liệu</a><ul>
-<li class="chapter" data-level="2.1" data-path="data-cleaning.html"><a href="data-cleaning.html#error"><i class="fa fa-check"></i><b>2.1</b> Các nhóm lỗi dữ liệu thường gặp</a></li>
-<li class="chapter" data-level="2.2" data-path="data-cleaning.html"><a href="data-cleaning.html#detectmethod"><i class="fa fa-check"></i><b>2.2</b> Phương pháp phát hiện lỗi</a><ul>
-<li class="chapter" data-level="2.2.1" data-path="data-cleaning.html"><a href="data-cleaning.html#d-liu-bi-thiumt"><i class="fa fa-check"></i><b>2.2.1</b> Dữ liệu bị thiếu/mất</a></li>
-<li class="chapter" data-level="2.2.2" data-path="data-cleaning.html"><a href="data-cleaning.html#d-liu-bi-lp-lai"><i class="fa fa-check"></i><b>2.2.2</b> Dữ liệu bị lặp lại</a></li>
-<li class="chapter" data-level="2.2.3" data-path="data-cleaning.html"><a href="data-cleaning.html#gia-tri-khong-hp-ly"><i class="fa fa-check"></i><b>2.2.3</b> Giá trị không hợp lý</a></li>
-<li class="chapter" data-level="2.2.4" data-path="data-cleaning.html"><a href="data-cleaning.html#khong-tuong-hp-gia-cac-bin-s"><i class="fa fa-check"></i><b>2.2.4</b> Không tương hợp giữa các biến số</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Giới thiệu về phân tích dữ liệu</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#vi-sao-phai-quan-tam-n-phan-tich-d-liu"><i class="fa fa-check"></i><b>1.1</b> Vì sao phải quan tâm đến phân tích dữ liệu</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#cac-giai-oan-trong-qua-trinh-phan-tich-d-liu"><i class="fa fa-check"></i><b>1.2</b> Các giai đoạn trong quá trình phân tích dữ liệu</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#mt-s-khai-nim"><i class="fa fa-check"></i><b>1.3</b> Một số khái niệm</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="intro.html"><a href="intro.html#bang-d-liu"><i class="fa fa-check"></i><b>1.3.1</b> Bảng dữ liệu</a></li>
+<li class="chapter" data-level="1.3.2" data-path="intro.html"><a href="intro.html#bin-s"><i class="fa fa-check"></i><b>1.3.2</b> Biến số</a></li>
+<li class="chapter" data-level="1.3.3" data-path="intro.html"><a href="intro.html#phan-phi-thng-ke"><i class="fa fa-check"></i><b>1.3.3</b> Phân phối thống kê</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="data-cleaning.html"><a href="data-cleaning.html#quy-trinh-kim-tra-va-lam-sach-d-liu"><i class="fa fa-check"></i><b>2.3</b> Quy trình kiểm tra và làm sạch dữ liệu</a><ul>
-<li class="chapter" data-level="2.3.1" data-path="data-cleaning.html"><a href="data-cleaning.html#tim-li"><i class="fa fa-check"></i><b>2.3.1</b> Tìm lỗi</a></li>
-<li class="chapter" data-level="2.3.2" data-path="data-cleaning.html"><a href="data-cleaning.html#chn-oan-li"><i class="fa fa-check"></i><b>2.3.2</b> Chẩn đoán lỗi</a></li>
-<li class="chapter" data-level="2.3.3" data-path="data-cleaning.html"><a href="data-cleaning.html#sa-li-lam-sach-d-liu"><i class="fa fa-check"></i><b>2.3.3</b> Sửa lỗi (làm sạch dữ liệu)</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#example"><i class="fa fa-check"></i><b>1.4</b> Example</a></li>
 </ul></li>
+<li class="chapter" data-level="2" data-path="datacleaning.html"><a href="datacleaning.html"><i class="fa fa-check"></i><b>2</b> Kiểm tra và làm sạch dữ liệu</a><ul>
+<li class="chapter" data-level="2.1" data-path="datacleaning.html"><a href="datacleaning.html#error"><i class="fa fa-check"></i><b>2.1</b> Các nhóm lỗi dữ liệu thường gặp</a></li>
+<li class="chapter" data-level="2.2" data-path="datacleaning.html"><a href="datacleaning.html#detectmethod"><i class="fa fa-check"></i><b>2.2</b> Phương pháp phát hiện lỗi</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="datacleaning.html"><a href="datacleaning.html#d-liu-bi-thiumt"><i class="fa fa-check"></i><b>2.2.1</b> Dữ liệu bị thiếu/mất</a></li>
+<li class="chapter" data-level="2.2.2" data-path="datacleaning.html"><a href="datacleaning.html#d-liu-bi-lp-lai"><i class="fa fa-check"></i><b>2.2.2</b> Dữ liệu bị lặp lại</a></li>
+<li class="chapter" data-level="2.2.3" data-path="datacleaning.html"><a href="datacleaning.html#gia-tri-khong-hp-ly"><i class="fa fa-check"></i><b>2.2.3</b> Giá trị không hợp lý</a></li>
+<li class="chapter" data-level="2.2.4" data-path="datacleaning.html"><a href="datacleaning.html#khong-tuong-hp-gia-cac-bin-s"><i class="fa fa-check"></i><b>2.2.4</b> Không tương hợp giữa các biến số</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="datacleaning.html"><a href="datacleaning.html#quy-trinh-kim-tra-va-lam-sach-d-liu"><i class="fa fa-check"></i><b>2.3</b> Quy trình kiểm tra và làm sạch dữ liệu</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="datacleaning.html"><a href="datacleaning.html#tim-li"><i class="fa fa-check"></i><b>2.3.1</b> Tìm lỗi</a></li>
+<li class="chapter" data-level="2.3.2" data-path="datacleaning.html"><a href="datacleaning.html#chn-oan-li"><i class="fa fa-check"></i><b>2.3.2</b> Chẩn đoán lỗi</a></li>
+<li class="chapter" data-level="2.3.3" data-path="datacleaning.html"><a href="datacleaning.html#sa-li-lam-sach-d-liu"><i class="fa fa-check"></i><b>2.3.3</b> Sửa lỗi (làm sạch dữ liệu)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="datacleaning.html"><a href="datacleaning.html#tai-lieu-tham-khao"><i class="fa fa-check"></i><b>2.4</b> Tai lieu tham khao</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html"><i class="fa fa-check"></i><b>3</b> Chuẩn bị dữ liệu cho phân tích</a><ul>
 <li class="chapter" data-level="3.1" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html#tao-them-bin-s-mi"><i class="fa fa-check"></i><b>3.1</b> Tạo thêm biến số mới</a></li>
@@ -154,13 +165,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.3.1" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html#kt-hp-cac-bang-d-liu-vi-nhau"><i class="fa fa-check"></i><b>3.3.1</b> Kết hợp các bảng dữ liệu với nhau</a></li>
 <li class="chapter" data-level="3.3.2" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html#d-liu-dang-dai-hay-dang-rng"><i class="fa fa-check"></i><b>3.3.2</b> Dữ liệu dạng dài hay dạng rộng</a></li>
 </ul></li>
+<li class="chapter" data-level="3.4" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html#bang-d-liu-gon-gang-tidy-data"><i class="fa fa-check"></i><b>3.4</b> Bảng dữ liệu gọn gàng (tidy data)</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html"><i class="fa fa-check"></i><b>4</b> Phân tích mô tả</a><ul>
-<li class="chapter" data-level="4.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#mt-s-khai-nim"><i class="fa fa-check"></i><b>4.1</b> Một số khái niệm</a><ul>
-<li class="chapter" data-level="4.1.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#bang-d-liu"><i class="fa fa-check"></i><b>4.1.1</b> Bảng dữ liệu</a></li>
-<li class="chapter" data-level="4.1.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#bin-s"><i class="fa fa-check"></i><b>4.1.2</b> Biến số</a></li>
+<li class="chapter" data-level="4.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#vi-sao-phai-thc-hin-phan-tich-mo-ta"><i class="fa fa-check"></i><b>4.1</b> Vì sao phải thực hiện phân tích mô tả?</a></li>
+<li class="chapter" data-level="4.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#nhc-lai-v-phan-phi-xac-sut"><i class="fa fa-check"></i><b>4.2</b> Nhắc lại về phân phối xác suất</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#phan-phi-binh-thung"><i class="fa fa-check"></i><b>4.2.1</b> Phân phối bình thường</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#phan-phi-thng-ke"><i class="fa fa-check"></i><b>4.2</b> Phân phối thống kê</a></li>
 <li class="chapter" data-level="4.3" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#mo-ta-bin-s-phan-nhom"><i class="fa fa-check"></i><b>4.3</b> Mô tả biến số phân nhóm</a><ul>
 <li class="chapter" data-level="4.3.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#biu-"><i class="fa fa-check"></i><b>4.3.1</b> Biểu đồ</a></li>
 <li class="chapter" data-level="4.3.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#chi-s"><i class="fa fa-check"></i><b>4.3.2</b> Chỉ số</a></li>
@@ -169,6 +180,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.4.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#biu--1"><i class="fa fa-check"></i><b>4.4.1</b> Biểu đồ</a></li>
 <li class="chapter" data-level="4.4.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#chi-s-1"><i class="fa fa-check"></i><b>4.4.2</b> Chỉ số</a></li>
 </ul></li>
+<li class="chapter" data-level="4.5" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#phan-phi-chun-hay-khong-chun"><i class="fa fa-check"></i><b>4.5</b> Phân phối chuẩn hay không chuẩn?</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="kim-inh-gia-thuyt-thng-ke.html"><a href="kim-inh-gia-thuyt-thng-ke.html"><i class="fa fa-check"></i><b>5</b> Kiểm định giả thuyết thống kê</a><ul>
 <li class="chapter" data-level="5.1" data-path="kim-inh-gia-thuyt-thng-ke.html"><a href="kim-inh-gia-thuyt-thng-ke.html#nguyen-tc-kim-inh-thng-ke"><i class="fa fa-check"></i><b>5.1</b> Nguyên tắc kiểm định thống kê</a></li>
@@ -193,7 +205,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="11" data-path="Rcmdr.html"><a href="Rcmdr.html"><i class="fa fa-check"></i><b>11</b> Giới thiệu về R và R Commander</a></li>
 <li class="chapter" data-level="" data-path="uc-tinh-c-mu.html"><a href="uc-tinh-c-mu.html"><i class="fa fa-check"></i>Ước tính cỡ mẫu</a></li>
-<li class="chapter" data-level="" data-path="tai-liu1ec7u-tham-khu1ea3o.html"><a href="tai-liu1ec7u-tham-khu1ea3o.html"><i class="fa fa-check"></i>Tài li&lt;U+1EC7&gt;u tham kh&lt;U+1EA3&gt;o</a></li>
+<li class="chapter" data-level="" data-path="tai-liu-tham-khao.html"><a href="tai-liu-tham-khao.html"><i class="fa fa-check"></i>Tài liệu tham khảo</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -221,7 +233,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Giả sử ta muốn tìm hiểu mối liên quan giữa độ cô đặc máu (hemoconcentration) và sốc sốt xuất huyết ở đối tượng trẻ em từ 5-15 tuổi nhập viện vì sốt xuất huyết. Nghiên cứu được tiến hành bằng cách chọn 500 bệnh nhân là trẻ em trong lứa tuổi từ 5-15 nhập viện với chẩn đoán sốt xuất huyết và ghi nhận lại độ cô đặc máu. Sau khi theo dõi, số bệnh nhân trong mẫu nghiên cứu được chia thành 2 nhóm là có sốc và không sốc.</p>
 <p>Trong một nghiên cứu ở bệnh viện A, độ cô đặc máu trung bình của nhóm sốc là 4.93 và của nhóm không sốc là 2.57. Trong một nghiên cứu khác, nhóm nghiên cứu thuộc bệnh viện B lại ghi nhận độ cô đặc máu trung bình của nhóm sốc là 4.22 và của nhóm không sốc là 1.07. Kết quả các nhóm nghiên cứu ở nhiều địa điểm khác nhau được tổng hợp trong bảng sau:</p>
 <table>
-<caption><span id="tab:unnamed-chunk-1">Bảng 5.1: </span>T&lt;U+1ED5&gt;ng h&lt;U+1EE3&gt;p k&lt;U+1EBF&gt;t qu&lt;U+1EA3&gt; nghiên c&lt;U+1EE9&gt;u &lt;U+1EDF&gt; các b&lt;U+1EC7&gt;nh vi&lt;U+1EC7&gt;n</caption>
+<caption><span id="tab:unnamed-chunk-8">Bảng 5.1: </span>Tổng hợp kết quả nghiên cứu ở các bệnh viện</caption>
 <thead>
 <tr class="header">
 <th align="left">bv</th>
@@ -277,17 +289,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tbody>
 </table>
 <p>Nếu không có sự khác biệt về độ cô đặc máu trung bình giữa hai nhóm sốc và không sốc, thì chúng ta có thể kỳ vọng rằng hiệu số giữa giá trị độ cô đặc máu trung bình giữa hai nhóm sẽ bằng 0. Tuy nhiên trên thực tế, do tác động của một số yếu tố khách quan và chủ quan mà nhà nghiên cứu khó có thể kiểm soát được hết, hay còn gọi là các sai số ngẫu nhiên, hiệu số này có thể lớn hơn hoặc nhỏ hơn 0 một chút, nhưng vẫn dao động xung quanh giá trị 0.</p>
-<p><img src="book_da_basic_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="book_da_basic_files/figure-html/unnamed-chunk-9-1.png" width="80%" style="display: block; margin: auto;" /></p>
 <p>Xét kết quả nghiên cứu ở bệnh viện A, hiệu số giữa độ cô đặc máu trung bình giữa hai nhóm là 2.35.</p>
-<p><img src="book_da_basic_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="book_da_basic_files/figure-html/unnamed-chunk-10-1.png" width="80%" style="display: block; margin: auto;" /></p>
 <p>Các bước tiến hành kiểm định thống kê:</p>
 <p>Phát biểu giả thuyết vô hiệu (null hypothesis): không có sự khác biệt giữa hai nhóm.</p>
-<p>Tại sao lại cần phải phát biểu giả thuyết là hai nhóm không có sự khác biệt mà không phải là hai nhóm có khác biệt?</p>
-<p>Vì chỉ khi phát biểu hai nhóm không có khác biệt, mới có thể biểu diễn phát biểu này dưới dạng biểu thức:</p>
+<p><em>Tại sao lại cần phải phát biểu giả thuyết là hai nhóm không có sự khác biệt mà không phải là hai nhóm có khác biệt?</em> Vì chỉ khi phát biểu hai nhóm không có khác biệt, mới có thể biểu diễn phát biểu này dưới dạng biểu thức:</p>
 <p>Trung bình (nhóm A) = Trung bình (nhóm B)</p>
 <p>hay:</p>
 <p>Trung bình (nhóm A) - Trung bình (nhóm B) = 0</p>
-<p>Nếu ta chọn phát biểu ban đầu là giữa hai nhóm có sự khác biệt, thì sự khác biệt là bao nhiêu mới đủ lớn? Dựa vào đâu để chọn con số đó? Vì vậy giả thuyết vô hiệu là sự lựa chọn phù hợp cho mọi tình huống cần so sánh.</p>
+<p>Nếu ta chọn phát biểu ban đầu là giữa hai nhóm có sự khác biệt, thì sự khác biệt là bao nhiêu mới đủ lớn? Dựa vào đâu để chọn con số đó? Vì vậy giả thuyết vô hiệu là sự lựa chọn phù hợp cho các tình huống cần so sánh.</p>
 <p>Nếu null hypothesis là đúng:</p>
 <ul>
 <li>Xác định test statistic: t statistic</li>
@@ -363,6 +374,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

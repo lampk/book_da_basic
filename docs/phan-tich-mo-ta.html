@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chương 4 Phân tích mô tả | Phân tích số liệu cơ bản</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chương 4 Phân tích mô tả | Phân tích số liệu cơ bản" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Phùng Khánh Lâm, Ong Phúc Thịnh" />
 
 
-<meta name="date" content="2019-07-13" />
+<meta name="date" content="2019-07-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -55,6 +55,7 @@ a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -132,20 +133,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#ni-dung-d-kin"><i class="fa fa-check"></i><b>0.1</b> Nội dung dự kiến</a></li>
 <li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#d-liu-s-dung-trong-sach"><i class="fa fa-check"></i><b>0.2</b> Dữ liệu sử dụng trong sách</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Giới thiệu về phân tích dữ liệu</a></li>
-<li class="chapter" data-level="2" data-path="data-cleaning.html"><a href="data-cleaning.html"><i class="fa fa-check"></i><b>2</b> Kiểm tra và làm sạch dữ liệu</a><ul>
-<li class="chapter" data-level="2.1" data-path="data-cleaning.html"><a href="data-cleaning.html#error"><i class="fa fa-check"></i><b>2.1</b> Các nhóm lỗi dữ liệu thường gặp</a></li>
-<li class="chapter" data-level="2.2" data-path="data-cleaning.html"><a href="data-cleaning.html#detectmethod"><i class="fa fa-check"></i><b>2.2</b> Phương pháp phát hiện lỗi</a><ul>
-<li class="chapter" data-level="2.2.1" data-path="data-cleaning.html"><a href="data-cleaning.html#d-liu-bi-thiumt"><i class="fa fa-check"></i><b>2.2.1</b> Dữ liệu bị thiếu/mất</a></li>
-<li class="chapter" data-level="2.2.2" data-path="data-cleaning.html"><a href="data-cleaning.html#d-liu-bi-lp-lai"><i class="fa fa-check"></i><b>2.2.2</b> Dữ liệu bị lặp lại</a></li>
-<li class="chapter" data-level="2.2.3" data-path="data-cleaning.html"><a href="data-cleaning.html#gia-tri-khong-hp-ly"><i class="fa fa-check"></i><b>2.2.3</b> Giá trị không hợp lý</a></li>
-<li class="chapter" data-level="2.2.4" data-path="data-cleaning.html"><a href="data-cleaning.html#khong-tuong-hp-gia-cac-bin-s"><i class="fa fa-check"></i><b>2.2.4</b> Không tương hợp giữa các biến số</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Giới thiệu về phân tích dữ liệu</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#vi-sao-phai-quan-tam-n-phan-tich-d-liu"><i class="fa fa-check"></i><b>1.1</b> Vì sao phải quan tâm đến phân tích dữ liệu</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#cac-giai-oan-trong-qua-trinh-phan-tich-d-liu"><i class="fa fa-check"></i><b>1.2</b> Các giai đoạn trong quá trình phân tích dữ liệu</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#mt-s-khai-nim"><i class="fa fa-check"></i><b>1.3</b> Một số khái niệm</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="intro.html"><a href="intro.html#bang-d-liu"><i class="fa fa-check"></i><b>1.3.1</b> Bảng dữ liệu</a></li>
+<li class="chapter" data-level="1.3.2" data-path="intro.html"><a href="intro.html#bin-s"><i class="fa fa-check"></i><b>1.3.2</b> Biến số</a></li>
+<li class="chapter" data-level="1.3.3" data-path="intro.html"><a href="intro.html#phan-phi-thng-ke"><i class="fa fa-check"></i><b>1.3.3</b> Phân phối thống kê</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="data-cleaning.html"><a href="data-cleaning.html#quy-trinh-kim-tra-va-lam-sach-d-liu"><i class="fa fa-check"></i><b>2.3</b> Quy trình kiểm tra và làm sạch dữ liệu</a><ul>
-<li class="chapter" data-level="2.3.1" data-path="data-cleaning.html"><a href="data-cleaning.html#tim-li"><i class="fa fa-check"></i><b>2.3.1</b> Tìm lỗi</a></li>
-<li class="chapter" data-level="2.3.2" data-path="data-cleaning.html"><a href="data-cleaning.html#chn-oan-li"><i class="fa fa-check"></i><b>2.3.2</b> Chẩn đoán lỗi</a></li>
-<li class="chapter" data-level="2.3.3" data-path="data-cleaning.html"><a href="data-cleaning.html#sa-li-lam-sach-d-liu"><i class="fa fa-check"></i><b>2.3.3</b> Sửa lỗi (làm sạch dữ liệu)</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#example"><i class="fa fa-check"></i><b>1.4</b> Example</a></li>
 </ul></li>
+<li class="chapter" data-level="2" data-path="datacleaning.html"><a href="datacleaning.html"><i class="fa fa-check"></i><b>2</b> Kiểm tra và làm sạch dữ liệu</a><ul>
+<li class="chapter" data-level="2.1" data-path="datacleaning.html"><a href="datacleaning.html#error"><i class="fa fa-check"></i><b>2.1</b> Các nhóm lỗi dữ liệu thường gặp</a></li>
+<li class="chapter" data-level="2.2" data-path="datacleaning.html"><a href="datacleaning.html#detectmethod"><i class="fa fa-check"></i><b>2.2</b> Phương pháp phát hiện lỗi</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="datacleaning.html"><a href="datacleaning.html#d-liu-bi-thiumt"><i class="fa fa-check"></i><b>2.2.1</b> Dữ liệu bị thiếu/mất</a></li>
+<li class="chapter" data-level="2.2.2" data-path="datacleaning.html"><a href="datacleaning.html#d-liu-bi-lp-lai"><i class="fa fa-check"></i><b>2.2.2</b> Dữ liệu bị lặp lại</a></li>
+<li class="chapter" data-level="2.2.3" data-path="datacleaning.html"><a href="datacleaning.html#gia-tri-khong-hp-ly"><i class="fa fa-check"></i><b>2.2.3</b> Giá trị không hợp lý</a></li>
+<li class="chapter" data-level="2.2.4" data-path="datacleaning.html"><a href="datacleaning.html#khong-tuong-hp-gia-cac-bin-s"><i class="fa fa-check"></i><b>2.2.4</b> Không tương hợp giữa các biến số</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="datacleaning.html"><a href="datacleaning.html#quy-trinh-kim-tra-va-lam-sach-d-liu"><i class="fa fa-check"></i><b>2.3</b> Quy trình kiểm tra và làm sạch dữ liệu</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="datacleaning.html"><a href="datacleaning.html#tim-li"><i class="fa fa-check"></i><b>2.3.1</b> Tìm lỗi</a></li>
+<li class="chapter" data-level="2.3.2" data-path="datacleaning.html"><a href="datacleaning.html#chn-oan-li"><i class="fa fa-check"></i><b>2.3.2</b> Chẩn đoán lỗi</a></li>
+<li class="chapter" data-level="2.3.3" data-path="datacleaning.html"><a href="datacleaning.html#sa-li-lam-sach-d-liu"><i class="fa fa-check"></i><b>2.3.3</b> Sửa lỗi (làm sạch dữ liệu)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="datacleaning.html"><a href="datacleaning.html#tai-lieu-tham-khao"><i class="fa fa-check"></i><b>2.4</b> Tai lieu tham khao</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html"><i class="fa fa-check"></i><b>3</b> Chuẩn bị dữ liệu cho phân tích</a><ul>
 <li class="chapter" data-level="3.1" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html#tao-them-bin-s-mi"><i class="fa fa-check"></i><b>3.1</b> Tạo thêm biến số mới</a></li>
@@ -154,13 +165,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.3.1" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html#kt-hp-cac-bang-d-liu-vi-nhau"><i class="fa fa-check"></i><b>3.3.1</b> Kết hợp các bảng dữ liệu với nhau</a></li>
 <li class="chapter" data-level="3.3.2" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html#d-liu-dang-dai-hay-dang-rng"><i class="fa fa-check"></i><b>3.3.2</b> Dữ liệu dạng dài hay dạng rộng</a></li>
 </ul></li>
+<li class="chapter" data-level="3.4" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html#bang-d-liu-gon-gang-tidy-data"><i class="fa fa-check"></i><b>3.4</b> Bảng dữ liệu gọn gàng (tidy data)</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html"><i class="fa fa-check"></i><b>4</b> Phân tích mô tả</a><ul>
-<li class="chapter" data-level="4.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#mt-s-khai-nim"><i class="fa fa-check"></i><b>4.1</b> Một số khái niệm</a><ul>
-<li class="chapter" data-level="4.1.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#bang-d-liu"><i class="fa fa-check"></i><b>4.1.1</b> Bảng dữ liệu</a></li>
-<li class="chapter" data-level="4.1.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#bin-s"><i class="fa fa-check"></i><b>4.1.2</b> Biến số</a></li>
+<li class="chapter" data-level="4.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#vi-sao-phai-thc-hin-phan-tich-mo-ta"><i class="fa fa-check"></i><b>4.1</b> Vì sao phải thực hiện phân tích mô tả?</a></li>
+<li class="chapter" data-level="4.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#nhc-lai-v-phan-phi-xac-sut"><i class="fa fa-check"></i><b>4.2</b> Nhắc lại về phân phối xác suất</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#phan-phi-binh-thung"><i class="fa fa-check"></i><b>4.2.1</b> Phân phối bình thường</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#phan-phi-thng-ke"><i class="fa fa-check"></i><b>4.2</b> Phân phối thống kê</a></li>
 <li class="chapter" data-level="4.3" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#mo-ta-bin-s-phan-nhom"><i class="fa fa-check"></i><b>4.3</b> Mô tả biến số phân nhóm</a><ul>
 <li class="chapter" data-level="4.3.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#biu-"><i class="fa fa-check"></i><b>4.3.1</b> Biểu đồ</a></li>
 <li class="chapter" data-level="4.3.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#chi-s"><i class="fa fa-check"></i><b>4.3.2</b> Chỉ số</a></li>
@@ -169,28 +180,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.4.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#biu--1"><i class="fa fa-check"></i><b>4.4.1</b> Biểu đồ</a></li>
 <li class="chapter" data-level="4.4.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#chi-s-1"><i class="fa fa-check"></i><b>4.4.2</b> Chỉ số</a></li>
 </ul></li>
+<li class="chapter" data-level="4.5" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#phan-phi-chun-hay-khong-chun"><i class="fa fa-check"></i><b>4.5</b> Phân phối chuẩn hay không chuẩn?</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="kim-inh-gia-thuyt-thng-ke.html"><a href="kim-inh-gia-thuyt-thng-ke.html"><i class="fa fa-check"></i><b>5</b> Kiểm định giả thuyết thống kê</a><ul>
-<li class="chapter" data-level="5.1" data-path="kim-inh-gia-thuyt-thng-ke.html"><a href="kim-inh-gia-thuyt-thng-ke.html#ni-dung-d-kin-1"><i class="fa fa-check"></i><b>5.1</b> Nội dung dự kiến</a></li>
+<li class="chapter" data-level="5.1" data-path="kim-inh-gia-thuyt-thng-ke.html"><a href="kim-inh-gia-thuyt-thng-ke.html#nguyen-tc-kim-inh-thng-ke"><i class="fa fa-check"></i><b>5.1</b> Nguyên tắc kiểm định thống kê</a></li>
+<li class="chapter" data-level="5.2" data-path="kim-inh-gia-thuyt-thng-ke.html"><a href="kim-inh-gia-thuyt-thng-ke.html#tng-quan-v-cac-kim-inh-thng-ke-thung-gp"><i class="fa fa-check"></i><b>5.2</b> Tổng quan về các kiểm định thống kê thường gặp</a></li>
+<li class="chapter" data-level="5.3" data-path="kim-inh-gia-thuyt-thng-ke.html"><a href="kim-inh-gia-thuyt-thng-ke.html#tri-s-p-y-nghia-va-gia-tri"><i class="fa fa-check"></i><b>5.3</b> Trị số p: ý nghĩa và giá trị</a></li>
+<li class="chapter" data-level="5.4" data-path="kim-inh-gia-thuyt-thng-ke.html"><a href="kim-inh-gia-thuyt-thng-ke.html#mi-quan-h-gia-tri-s-p-va-khoang-tin-cy"><i class="fa fa-check"></i><b>5.4</b> Mối quan hệ giữa trị số p và khoảng tin cậy</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="mo-hinh-thng-ke.html"><a href="mo-hinh-thng-ke.html"><i class="fa fa-check"></i><b>6</b> Mô hình thống kê</a><ul>
-<li class="chapter" data-level="6.1" data-path="mo-hinh-thng-ke.html"><a href="mo-hinh-thng-ke.html#ni-dung-d-kin-2"><i class="fa fa-check"></i><b>6.1</b> Nội dung dự kiến</a></li>
+<li class="chapter" data-level="6.1" data-path="mo-hinh-thng-ke.html"><a href="mo-hinh-thng-ke.html#ni-dung-d-kin-1"><i class="fa fa-check"></i><b>6.1</b> Nội dung dự kiến</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="vit-bao-cao-phan-tich-phan-tich.html"><a href="vit-bao-cao-phan-tich-phan-tich.html"><i class="fa fa-check"></i><b>7</b> Viết báo cáo phân tích phân tích</a><ul>
-<li class="chapter" data-level="7.1" data-path="vit-bao-cao-phan-tich-phan-tich.html"><a href="vit-bao-cao-phan-tich-phan-tich.html#ni-dung-d-kin-3"><i class="fa fa-check"></i><b>7.1</b> Nội dung dự kiến</a></li>
+<li class="chapter" data-level="7.1" data-path="vit-bao-cao-phan-tich-phan-tich.html"><a href="vit-bao-cao-phan-tich-phan-tich.html#ni-dung-d-kin-2"><i class="fa fa-check"></i><b>7.1</b> Nội dung dự kiến</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><a href="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><i class="fa fa-check"></i><b>8</b> Đọc và diễn giải kết quả phân tích, Lập kế hoạch phân tích</a><ul>
-<li class="chapter" data-level="8.1" data-path="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><a href="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html#ni-dung-d-kin-4"><i class="fa fa-check"></i><b>8.1</b> Nội dung dự kiến</a></li>
+<li class="chapter" data-level="8.1" data-path="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><a href="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html#ni-dung-d-kin-3"><i class="fa fa-check"></i><b>8.1</b> Nội dung dự kiến</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="thu-thp-d-liu.html"><a href="thu-thp-d-liu.html"><i class="fa fa-check"></i><b>9</b> Thu thập dữ liệu</a><ul>
-<li class="chapter" data-level="9.1" data-path="thu-thp-d-liu.html"><a href="thu-thp-d-liu.html#ni-dung-d-kin-5"><i class="fa fa-check"></i><b>9.1</b> Nội dung dự kiến</a></li>
+<li class="chapter" data-level="9.1" data-path="thu-thp-d-liu.html"><a href="thu-thp-d-liu.html#ni-dung-d-kin-4"><i class="fa fa-check"></i><b>9.1</b> Nội dung dự kiến</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="tom-tt.html"><a href="tom-tt.html"><i class="fa fa-check"></i><b>10</b> Tóm tắt</a><ul>
-<li class="chapter" data-level="10.1" data-path="tom-tt.html"><a href="tom-tt.html#ni-dung-d-kin-6"><i class="fa fa-check"></i><b>10.1</b> Nội dung dự kiến</a></li>
+<li class="chapter" data-level="10.1" data-path="tom-tt.html"><a href="tom-tt.html#ni-dung-d-kin-5"><i class="fa fa-check"></i><b>10.1</b> Nội dung dự kiến</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="Rcmdr.html"><a href="Rcmdr.html"><i class="fa fa-check"></i><b>11</b> Giới thiệu về R và R Commander</a></li>
 <li class="chapter" data-level="" data-path="uc-tinh-c-mu.html"><a href="uc-tinh-c-mu.html"><i class="fa fa-check"></i>Ước tính cỡ mẫu</a></li>
-<li class="chapter" data-level="" data-path="tai-liu1ec7u-tham-khu1ea3o.html"><a href="tai-liu1ec7u-tham-khu1ea3o.html"><i class="fa fa-check"></i>Tài li&lt;U+1EC7&gt;u tham kh&lt;U+1EA3&gt;o</a></li>
+<li class="chapter" data-level="" data-path="tai-liu-tham-khao.html"><a href="tai-liu-tham-khao.html"><i class="fa fa-check"></i>Tài liệu tham khảo</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -213,112 +228,52 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="phan-tich-mo-ta" class="section level1">
 <h1><span class="header-section-number">Chương 4</span> Phân tích mô tả</h1>
+<div id="vi-sao-phai-thc-hin-phan-tich-mo-ta" class="section level2">
+<h2><span class="header-section-number">4.1</span> Vì sao phải thực hiện phân tích mô tả?</h2>
+<p>Phân tích mô tả là bước phân tích đầu tiên và quan trọng trong mỗi phân tích, nhằm mục tiêu mô tả một cách <strong>đầy đủ</strong>, <strong>trung thực</strong> và <strong>súc tích</strong> về bộ dữ liệu đang có.</p>
+<p>Mặc dù phân tích mô tả thường bị xem nhẹ, việc thực hiện giai đoạn phân tích này đem lại những ứng dụng to lớn:</p>
 <ul>
-<li><strong>Mục tiêu</strong></li>
-</ul>
-<p>Mô tả một cách đầy đủ, trung thực và súc tích bộ dữ liệu đang có</p>
-<ul>
-<li><p><strong>Ứng dụng</strong></p>
-<ul>
-<li>Kiểm tra dữ liệu</li>
-<li>Hiểu dữ liệu</li>
-<li>Lựa chọn hướng phân tích và phương pháp phân tích phù hợp</li>
-</ul></li>
-</ul>
-<div id="mt-s-khai-nim" class="section level2">
-<h2><span class="header-section-number">4.1</span> Một số khái niệm</h2>
-<div id="bang-d-liu" class="section level3">
-<h3><span class="header-section-number">4.1.1</span> Bảng dữ liệu</h3>
-<p>Bảng dữ liệu (dataset) là một bảng được tạo thành từ nhiều giá trị (value). Mỗi giá trị thuộc về một biến số (variable) và một đơn vị quan sát (observation unit). Các giá trị trong cùng một biến số phải có cùng thuộc tính (attribute). Một bảng dữ liệu điển hình có cấu trúc như sau gọi là bảng dữ liệu gọn gàng (tidy data).</p>
-<table>
-<caption><span id="tab:unnamed-chunk-1">Bảng 4.1: </span>Ví d&lt;U+1EE5&gt; v&lt;U+1EC1&gt; b&lt;U+1EA3&gt;ng d&lt;U+1EEF&gt; li&lt;U+1EC7&gt;u</caption>
-<thead>
-<tr class="header">
-<th align="left">id</th>
-<th align="left">ngaysinh</th>
-<th align="left">ngaync</th>
-<th align="left">gioitinh</th>
-<th align="right">hct0</th>
-<th align="right">cannang_kg</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">001</td>
-<td align="left">2013-05-08</td>
-<td align="left">NA</td>
-<td align="left">Nam</td>
-<td align="right">49</td>
-<td align="right">10</td>
-</tr>
-<tr class="even">
-<td align="left">002</td>
-<td align="left">2018-12-03</td>
-<td align="left">2018-02-03</td>
-<td align="left">N&lt;U+1EEF&gt;</td>
-<td align="right">250</td>
-<td align="right">50</td>
-</tr>
-<tr class="odd">
-<td align="left">003</td>
-<td align="left">2013-12-20</td>
-<td align="left">2018-12-13</td>
-<td align="left">Nam</td>
-<td align="right">50</td>
-<td align="right">20</td>
-</tr>
-<tr class="even">
-<td align="left">003</td>
-<td align="left">2013-12-20</td>
-<td align="left">2018-12-13</td>
-<td align="left">Nam</td>
-<td align="right">50</td>
-<td align="right">20</td>
-</tr>
-</tbody>
-</table>
-<p>Trong bảng dữ liệu gọn gàng, mỗi cột (column) là một biến số. Ví dụ trong bảng trên ta thấy ngaysinh, gioitinh là các biến số. Các giá trị nằm trong cùng một biến số có cùng thuộc tính, ví dụ các giá trị trong biến gioitinh có cùng thuộc tính là chuỗi ký tự, hoặc biến cân nặng chỉ gồm các giá trị là số.</p>
-<p>Mỗi hàng ngang (row) là một đơn vị quan sát. Các đơn vị quan sát thường được đánh số hoặc gán mã định danh để dễ dàng phân biệt với nhau. Mã số này được chứa trong một biến số và thường là biến đầu tiên. Trong bảng ví dụ trên, đơn vị quan sát thứ nhất có mã số 001, đơn vị quan sát thứ hai có mã số 002.</p>
-</div>
-<div id="bin-s" class="section level3">
-<h3><span class="header-section-number">4.1.2</span> Biến số</h3>
-<div id="phan-loai-bin-s" class="section level4">
-<h4><span class="header-section-number">4.1.2.1</span> Phân loại biến số</h4>
-<p>Có nhiều cách phân loại biến số khác nhau, cách phân loại sau đây thường được trình bày và ứng dụng trong thực tế.</p>
-<ul>
-<li><strong>Nhị giá</strong>: biến số có 2 giá trị (VD: biến tử vong gồm 2 giá trị là sống/chết)</li>
-<li><strong>Phân nhóm</strong>: có &gt;2 giá trị, không có thứ tự (VD: biến quốc gia có thể có các giá trị Việt Nam, Lào, Thái Lan…)</li>
-<li><strong>Thứ tự</strong>: các giá trị có thứ tự (VD: nhóm tuổi (từ 18-25, 25-45, trên 45), mức độ hài lòng (không hài lòng, trung bình, rất hài lòng))</li>
-<li><strong>Liên tục</strong>: có thang đo và đơn vị (VD: tuổi)</li>
+<li><p><em>Kiểm tra dữ liệu</em>: các công cụ của thống kê mô tả (các chỉ số thống kê, biểu đồ) được sử dụng rất hữu hiệu để kiểm tra và làm sạch dữ liệu (xem thêm Chương <a href="datacleaning.html#datacleaning">2</a>).</p></li>
+<li><p><em>Hiểu dữ liệu</em>: chúng ta cần hiểu dữ liệu của mình trước khi tiến hành phân tích chính thức. Các phân tích mô tả tuy đơn giản nhưng có thể giúp cung cấp thông tin quan trọng về dữ liệu một cách nhanh chóng, giúp chúng ta hiểu hơn về bộ dữ liệu mà mình đang phân tích.</p></li>
+<li><p><em>Lựa chọn hướng phân tích và phương pháp phân tích phù hợp</em>: thống kê mô tả thường được dùng để đánh giá sự phù hợp của các giả định về dữ liệu (ví dụ như phân phối của các biến số), từ đó góp phần định hướng phương pháp phân tích phù hợp.</p></li>
 </ul>
 </div>
-<div id="ma-hoa-bin-s" class="section level4">
-<h4><span class="header-section-number">4.1.2.2</span> Mã hóa biến số</h4>
-<p>Biến số phân nhóm: Thường được mã hoá thành con số, ví dụ mã hóa các giá trị của biến quốc gia dưới dạng Việt Nam = 1, Lào = 2, Thái Lan = 3. Tuy nhiên, điều đó không biến chúng thành biến số liên tục. Ta không thể thực hiện các phép tính toán trên biến số mã hóa này, như 1 + 2 = 3, nhưng trong ví dụ trên thì Việt Nam + Lào không thể = Thái Lan.</p>
-<p>Dữ liệu bị thiếu: Thường được mã hoá riêng, một cách phổ biến là mã hóa một giá trị lớn bất thường (9999) cho dữ liệu bị thiếu khi thu thập.</p>
-<p>Trong phân tích mô tả, cần mô tả số lượng dữ liệu bị thiếu cho từng biến số. Dữ liệu bị thiếu thường bị loại ra khỏi phân tích (do người thực hiện, hoặc do phần mềm phân tích), do đó nếu không tiến hành mô tả số lượng dữ liệu bị thiếu trước khi phân tích thì kết quả phân tích có thể bị sai lệch hoặc bị hiểu nhầm.</p>
+<div id="nhc-lai-v-phan-phi-xac-sut" class="section level2">
+<h2><span class="header-section-number">4.2</span> Nhắc lại về phân phối xác suất</h2>
+<p>Vì trọng tâm của phân tích mô tả là mô tả các biến số trong bộ dữ liệu, cụ thể hơn là phân phối của các biến số đó, nên <em>phân phối xác suất</em> (probability distribution, probability density) là một khái niệm cần được làm rõ. Phân phối xác suất của một biến số là một công thức toán học mô tả xác suất xuất hiện của từng giá trị biến số (với biến số rời rạc) hoặc của từng khoảng giá trị biến số (với biến số liên tục) <span class="citation">(A. Skrondal <a href="#ref-Everitt_2010">2010</a>)</span>. Phối phối xác suất này có thể được biểu diễn bằng biểu đồ, và qua biểu đồ này chúng ta có thể thấy được các giá trị có thể có của một biến số, cùng với tần suất hay khả năng xuất hiện của mỗi giá trị đó.</p>
+<p>Dưới đây là một ví dụ về phân phối xác suất của biến số về số lượng tiểu cầu trong máu, trong bộ dữ liệu mẫu:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(baseline<span class="op">$</span>plt<span class="op">/</span><span class="dv">1000</span>, <span class="dt">xlab =</span> <span class="st">&quot;Số lượng tiểu cầu (1000/mm3)&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Tần số&quot;</span>, <span class="dt">main =</span> <span class="ot">NULL</span>)</code></pre>
+<div class="figure" style="text-align: center"><span id="fig:probdist"></span>
+<img src="book_da_basic_files/figure-html/probdist-1.png" alt="Phân phối xác suất của số lượng tiểu cầu trong máu ở bộ dữ liệu mẫu" width="80%" />
+<p class="caption">
+Hình 4.1: Phân phối xác suất của số lượng tiểu cầu trong máu ở bộ dữ liệu mẫu
+</p>
 </div>
-<div id="la-chon-bin-s-cho-phan-tich" class="section level4">
-<h4><span class="header-section-number">4.1.2.3</span> Lựa chọn biến số cho phân tích</h4>
-<p>Trong bảng dữ liệu có thể bao gồm rất nhiều biến số, tuy nhiên không phải bất cứ biến số nào cũng có giá trị và nên đưa vào phân tích. Cần lựa chọn những biến số quan trọng dựa trên một kế hoạch phân tích đã lập ra từ trước.</p>
-<p><strong>Biến số chính</strong></p>
-<p>Được xác định dựa vào câu hỏi nghiên cứu hay giả thuyết nghiên cứu. Các biến số chính thường được chia thành biến số độc lập và biến số phụ thuộc.</p>
+<p>Vì số lượng tiểu cầu là biến số liên tục, giá trị của biến số này được chia thành những khoảng bằng nhau nhỏ hơn và tần số của mỗi khoảng giá trị được thể hiện bằng độ cao của các cột trong biểu đồ. Trong ví dụ trên có thể thấy, số lượng tiểu cầu trong máu của các đối tượng tham gia nghiên cứu dao động từ 0 đến khoảng 400,000/mm3. Trong đó, thường gặp nhất là khoảng giá trị từ 100,000 đến 150,000/mm3.</p>
+<div id="phan-phi-binh-thung" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> Phân phối bình thường</h3>
+<p>Trong các phân phối xác suất, <em>phân phối bình thường</em> (normal distribution hay Gaussian distribution), hay được gọi là <em>phân phối chuẩn</em>, là phân phối xác suất thường được nhắc đến trong các phân tích thống kê. Với một biến số ngẫu nhiên <span class="math inline">\(X\)</span>, nếu biến số này có phân phối bình thường, xác suất xuất hiện <span class="math inline">\(f(x)\)</span> cho giá trị <span class="math inline">\(x\)</span> của biến số đó được tính như sau <span class="citation">(A. Skrondal <a href="#ref-Everitt_2010">2010</a>)</span>:</p>
+<p><span class="math display">\[
+f(x) = \frac{1}{\sigma \sqrt{2\pi}} \left[-\frac{(x - \mu)^2}{2\sigma^2}\right]
+\]</span>
+Trong đó <span class="math inline">\(\mu\)</span> và <span class="math inline">\(\sigma\)</span> lần lượt là trung bình và độ lệch chuẩn của <span class="math inline">\(X\)</span>.</p>
+<p>Về hình dạng, phân phối bình thường có hình dạng đặc trưng là hình chuông úp (bell-shape), cân xứng hai bên với đỉnh là giá trị trung bình. Hình minh hoạ dưới đây là phân phối của số lượng tiểu cầu, với 100,000 giá trị đo được lấy ngẫu nhiên từ một phân phối bình thường với trung bình là 134,000/mm3 và độ lệch chuẩn là 61,000/mm3:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">set.seed</span>(<span class="dv">100</span>)
+pltran &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dt">n =</span> <span class="dv">100000</span>, <span class="dt">mean =</span> <span class="dv">134</span>, <span class="dt">sd =</span> <span class="dv">61</span>)
+<span class="kw">hist</span>(pltran, <span class="dt">xlab =</span> <span class="st">&quot;Số lượng tiểu cầu (1000/mm3)&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Tần số&quot;</span>, <span class="dt">main =</span> <span class="ot">NULL</span>)</code></pre>
+<div class="figure" style="text-align: center"><span id="fig:normaldist"></span>
+<img src="book_da_basic_files/figure-html/normaldist-1.png" alt="Phân phối xác suất của số lượng tiểu cầu được giả lập từ phân phối bình thường" width="80%" />
+<p class="caption">
+Hình 4.2: Phân phối xác suất của số lượng tiểu cầu được giả lập từ phân phối bình thường
+</p>
+</div>
+<p>Lưu ý vì đây chỉ đơn thuần là số liệu giả lập dựa trên công thức phân phối xác suất bình thường với trung bình là 134,000/mm3 và độ lệch chuẩn là 61,000/mm3 cho mục đích minh hoạ, có một số giá trị nằm trong khoảng -100 đến 0, vốn không thể xảy ra trong thực tế.</p>
+<p>Phân phối bình thường được biết đến rộng rãi và rất quan trọng trong thống kê vì những lý do sau:</p>
 <ul>
-<li>Biến số độc lập (independent variable): là những biến số thể hiện yếu tố có mối liên quan (association) hay là nguyên nhân (causation) của kết cuộc quan tâm trong nghiên cứu.</li>
-<li>Biến số phụ thuộc (dependent variable), còn gọi là biến số kết cuộc (outcome): là biến số thể hiện kết cuộc quan tâm trong nghiên cứu.</li>
+<li>Đơn giản về toán học: chỉ cần hai thông số là trung bình và độ lệch chuẩn, chúng ta có thể mô tả được toàn bộ phân phối.</li>
+<li>Là cơ sở của rất nhiều các phương pháp thống kê, thông qua <em>định lý giới hạn trung tâm</em> (Central Limit Theorem), với nội dung chính là nếu một biến số ngẫu nhiên <span class="math inline">\(Y\)</span> có trung bình trong dân số là <span class="math inline">\(\mu\)</span> và độ lệch chuẩn trong dân số là <span class="math inline">\(\sigma\)</span> thì giá trị trung bình <span class="math inline">\(\bar{y}\)</span>, trong một mẫu gồm <span class="math inline">\(n\)</span> đối tượng, sẽ có phân phối xấp xỉ phân phối bình thường với trung bình <span class="math inline">\(\mu\)</span> và độ lệch chuẩn <span class="math inline">\(\frac{\sigma}{\sqrt{n}}\)</span> khi <span class="math inline">\(n\)</span> đủ lớn <span class="citation">(A. Skrondal <a href="#ref-Everitt_2010">2010</a>)</span>.</li>
 </ul>
-<p><strong>Các yếu tố gây nhiễu</strong></p>
-<p>Yếu tố gây nhiễu là các yếu tố vừa tác động lên biến số phụ thuộc, vừa có tác động lên biến số độc lập. Việc xác định yếu tố gây nhiễu cần phải dựa vào y văn hoặc kiến thức chuyên ngành. Nếu vấn đề nghiên cứu là vấn đề rất mới thì có thể dựa vào bộ dữ liệu sẵn có để xác định những yếu tố gây nhiễu tiềm năng.</p>
-<p>Số lượng biến số thường bị giới hạn bởi cỡ mẫu và đặc điểm của biến số phụ thuộc. Vì vậy không nên chọn các biến số đưa vào phân tích một cách tùy tiện, tràn lan mà nên chọn theo kế hoạch đã xác định từ ban đâu và luôn tập trung vào câu hỏi hay giả thuyết nguyên cứu để quyết định có nên đưa một biến nào đó vào phân tích hay không.</p>
 </div>
-</div>
-</div>
-<div id="phan-phi-thng-ke" class="section level2">
-<h2><span class="header-section-number">4.2</span> Phân phối thống kê</h2>
-<p>Phân phối thống kê là sự mô tả các giá trị có thể có của một biến số, đi kèm với tần suất hay khả năng xuất hiện của mỗi giá trị.</p>
-<p><img src="book_da_basic_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<p>Ví dụ trên thể hiện phân phối của biến dung tích hồng cầu (Hct). Biến này có thể có các giá trị từ 38 đến 52, trong đó tần suất để dung tích hồng cầu là 44-46 là lớn nhất, tần suất của một giá trị được thể hiện bằng độ cao của các cột trong biểu đồ.</p>
-<p>Biểu đồ phân phối của biến dung tích hồng cầu cũng là một ví dụ điển hình của phân phối bình thường (normal distribution) rất phổ biến và thường được nhắc đến trong thống kê. Phân phối bình thường có các đặc tính đặc trưng về mặt toán học (trung bình, độ lệch chuẩn) và là cơ sở của rất nhiều các phép kiểm định, mô hình thống kê.</p>
 </div>
 <div id="mo-ta-bin-s-phan-nhom" class="section level2">
 <h2><span class="header-section-number">4.3</span> Mô tả biến số phân nhóm</h2>
@@ -327,13 +282,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>Biểu đồ cột</li>
 </ul>
-<p><img src="book_da_basic_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="book_da_basic_files/figure-html/unnamed-chunk-4-1.png" width="80%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="chi-s" class="section level3">
 <h3><span class="header-section-number">4.3.2</span> Chỉ số</h3>
 <ul>
-<li>Tần số</li>
-<li>Tỷ lệ phần trăm</li>
+<li>Tần số: là số lần xuất hiện của một giá trị.</li>
+<li>Tỷ lệ phần trăm: là tỷ lệ giữa tần số của một giá trị so với tổng số giá trị.</li>
 </ul>
 </div>
 </div>
@@ -352,12 +307,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##   2 3 4
 ## 1 2 3 4 5</code></pre>
 <p>Kết quả thu được từ những bước trên tương ứng với histogram sau</p>
-<p><img src="book_da_basic_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="book_da_basic_files/figure-html/unnamed-chunk-6-1.png" width="80%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="boxplot" class="section level4">
 <h4><span class="header-section-number">4.4.1.2</span> Boxplot</h4>
 <p>Dữ liệu nói trên cũng có thể được trình bày thành dạng biểu đồ như sau:</p>
-<p><img src="book_da_basic_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><img src="book_da_basic_files/figure-html/unnamed-chunk-7-1.png" width="80%" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <div id="chi-s-1" class="section level3">
@@ -390,10 +345,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="mo-ta--phan-tan" class="section level4">
 <h4><span class="header-section-number">4.4.2.2</span> Mô tả độ phân tán</h4>
 <p><strong>Độ lệch chuẩn (standard deviation, SD)</strong></p>
-<p>Nếu dữ liệu xấp xỉ tuân theo phân phối bình thường (một đỉnh, đối xứng, không nhiều giá trị ngoại lai), thì
+<p>Nếu dữ liệu xấp xỉ tuân theo phân phối bình thường (một đỉnh, đối xứng, không nhiều giá trị ngoại lai), thì có thể mô tả dữ liệu bằng độ lệch chuẩn.
 * ~68% quan sát nằm trong khoảng +/- 1SD
 * ~95% quan sát nằm trong khoảng +/- 2SD</p>
-<p><strong>Khoảng tứ phân vị (IQR)</strong></p>
+<p><strong>Khoảng tứ phân vị (interquartile range, IQR)</strong></p>
 <ul>
 <li>Phân vị thấp (Q1): giá trị mà 25% số giá trị quan sát nhỏ hơn</li>
 <li>Phân vị cao (Q3): giá trị mà 25% số giá trị quan sát lớn hơn</li>
@@ -404,9 +359,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Cỡ mẫu rất nhỏ</li>
 <li>Phụ thuộc vào cỡ mẫu</li>
 </ul>
+</div>
+</div>
+</div>
+<div id="phan-phi-chun-hay-khong-chun" class="section level2">
+<h2><span class="header-section-number">4.5</span> Phân phối chuẩn hay không chuẩn?</h2>
 
 </div>
 </div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Everitt_2010">
+<p>A. Skrondal, B. S. Everitt &amp;. 2010. <em>The Cambridge Dictionary of Statistics</em>. 4th ed. Cambridge University Press.</p>
 </div>
 </div>
             </section>
