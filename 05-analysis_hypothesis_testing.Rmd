@@ -20,7 +20,7 @@ knitr::kable(
 
 Nếu không có sự khác biệt về độ cô đặc máu trung bình giữa hai nhóm sốc và không sốc, thì chúng ta có thể kỳ vọng rằng hiệu số giữa giá trị độ cô đặc máu trung bình giữa hai nhóm sẽ bằng 0. Tuy nhiên trên thực tế, do tác động của một số yếu tố khách quan và chủ quan mà nhà nghiên cứu khó có thể kiểm soát được hết, hay còn gọi là các sai số ngẫu nhiên, hiệu số này có thể lớn hơn hoặc nhỏ hơn 0 một chút, nhưng vẫn dao động xung quanh giá trị 0.
 
-```{r, echo = F}
+```{r, echo = F, fig.cap = "Phân phối sự khác biệt giữa hai nhóm", label = "2_nhom"}
 set.seed(42)
 a <- rnorm(10000, 0, 2.44)
 p <- hist(a, breaks = 40, main = NULL, xlab = NULL, ylab = NULL, axes = F)
@@ -29,7 +29,7 @@ axis(1)
 
 Xét kết quả nghiên cứu ở bệnh viện A, hiệu số giữa độ cô đặc máu trung bình giữa hai nhóm là 2.35.
 
-```{r, echo = F}
+```{r, echo = F, fig.cap = "Kết quả bệnh viện A", label = "bvA"}
 set.seed(42)
 a <- rnorm(10000, 0, 2.44)
 p <- hist(a, breaks = 40, main = NULL, xlab = NULL, ylab = NULL, axes = F)

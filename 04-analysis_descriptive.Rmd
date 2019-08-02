@@ -73,7 +73,7 @@ Số lượng biến số thường bị giới hạn bởi cỡ mẫu và đặ
 
 Phân phối thống kê là sự mô tả các giá trị có thể có của một biến số, đi kèm với tần suất hay khả năng xuất hiện của mỗi giá trị.
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, fig.cap = "Ví dụ về phân phối thống kê"}
 set.seed(42)
 df <- rnorm(1000, 45, 2)
 hist(df, xlab = "Hct (%)", ylab = "Tần số", main = NULL)
@@ -87,7 +87,7 @@ Biểu đồ phân phối của biến dung tích hồng cầu cũng là một v
 ### Biểu đồ
 * Biểu đồ cột
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, fig.cap = "Biểu đồ cột"}
 cannang_kg  <- c(10, 50, 20, 20)
 barplot(cannang_kg, names.arg = c("A", "B", "C", "D"), ylab = "Cân nặng (kg)")
 ```
@@ -131,7 +131,7 @@ axis(2)
 
 Dữ liệu nói trên cũng có thể được trình bày thành dạng biểu đồ như sau:
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, fig.cap = "Box plot"}
 df <- c(1, 5, 2, 3, 4, 3, 4, 2, 3)
 boxplot(df, horizontal = T)
 ```
