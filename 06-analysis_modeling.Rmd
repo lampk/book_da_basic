@@ -1,16 +1,59 @@
 # Mô hình thống kê
 
-## Nội dung dự kiến
+## Ước lượng, khoảng ước lượng, khoảng tin cậy
 
-* Ước lượng, khoảng ước lượng, khoảng tin cậy
-* Mô hình thống kê là gì? So sánh với kiểm định thống kê
-* Nguyên tắc xây dựng mô hình thống kê
-* Tổng quan các mô hình thống kê thường gặp
+## Mô hình thống kê là gì? So sánh với kiểm định thống kê
 
-* Cách diễn giải ý nghĩa ước lượng và khoảng ước lượng
-* Cách lập kế hoạch xây dựng mô hình thống kê
-* Cách diễn giải kết quả từ mô hình thống kê
-* Cách lựa chọn mô hình thống kê phù hợp
+Mô hình thống kê là phương pháp phân tích sử dụng mô hình toán học (mô hình hồi quy) để mô tả một biến số phụ thuộc theo một hoặc một vài biến số độc lập. Một số mô hình thống kê đơn giản như hồi quy tuyến tính (linear regression), mô hình hồi quy logistic (logistic regression)... có thể dễ dàng biểu diễn thành biểu thức đại số để thể hiện và tính toán mối quan hệ giữa các biến trong mô hình. Mô hình thống kê cho phép đo lường **mức độ** liên quan/ảnh hưởng của các biến số độc lập lên biến số phụ thuộc, đồng thời cũng cho phép **tiên đoán/dự báo** giá trị của biến số phụ thuộc dựa trên giá trị của các biến số độc lập.
+
+Mô hình thống kê có thể chia thành hai loại:
+
+* Mô hình đơn biến (univariate): Mô tả biến phụ thuộc bằng một biến độc lập.
+
+* Mô hình đa biến (multivariable): Mô tả biến phụ thuộc bằng nhiều biến độc lập.
+
+**So sánh mô hình thống kê với kiểm định thống kê**
+
+**Kiểm định thống kê**
+
+* Kết quả
+
+  + Trị số p
+
+* Không cho phép hiệu chỉnh các yếu tố gây nhiễu
+
+* Giả định
+
+  + Phân phối của biến số
+
+**Mô hình thống kê**
+
+* Kết quả
+
+  + Trị số p
+  
+  + Độ lớn của mối liên hệ (khoảng tin cậy)
+
+* Cho phép hiệu chỉnh cho các yếu tố gây nhiễu
+
+* Giả định
+
+  + Phân phối của biến số phụ thuộc
+  
+  + Mối liên hệ giữa các biến số
+
+
+## Nguyên tắc xây dựng mô hình thống kê
+
+## Tổng quan các mô hình thống kê thường gặp
+
+## Cách diễn giải ý nghĩa ước lượng và khoảng ước lượng
+
+## Cách lập kế hoạch xây dựng mô hình thống kê
+
+## Cách diễn giải kết quả từ mô hình thống kê
+
+## Cách lựa chọn mô hình thống kê phù hợp
 
 ## Tham khao
 

@@ -48,10 +48,17 @@ Trong đó $\mu$ và $\sigma$ lần lượt là trung bình và độ lệch chu
 
 Về hình dạng, phân phối bình thường có hình dạng đặc trưng là hình chuông úp (bell-shape), cân xứng hai bên với đỉnh là giá trị trung bình. Hình minh hoạ dưới đây là phân phối của số lượng tiểu cầu, với 100,000 giá trị đo được lấy ngẫu nhiên từ một phân phối bình thường với trung bình là 134,000/mm3 và độ lệch chuẩn là 61,000/mm3:
 
+<<<<<<< HEAD
 ```{r normaldist, fig.cap="Phân phối xác suất của số lượng tiểu cầu được giả lập từ phân phối bình thường"}
 set.seed(100)
 pltran <- rnorm(n = 100000, mean = 134, sd = 61)
 hist(pltran, xlab = "Số lượng tiểu cầu (1000/mm3)", ylab = "Tần số", main = NULL)
+=======
+```{r, echo = FALSE, fig.cap = "Ví dụ về phân phối thống kê"}
+set.seed(42)
+df <- rnorm(1000, 45, 2)
+hist(df, xlab = "Hct (%)", ylab = "Tần số", main = NULL)
+>>>>>>> c8c72d14889d5e7225f55127b71eaaeef3883b33
 ```
 Lưu ý vì đây chỉ đơn thuần là số liệu giả lập dựa trên công thức phân phối xác suất bình thường với trung bình là 134,000/mm3 và độ lệch chuẩn là 61,000/mm3 cho mục đích minh hoạ, có một số giá trị nằm trong khoảng -100 đến 0, vốn không thể xảy ra trong thực tế.
 
@@ -64,7 +71,7 @@ Phân phối bình thường được biết đến rộng rãi và rất quan t
 ### Biểu đồ
 * Biểu đồ cột
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, fig.cap = "Biểu đồ cột"}
 cannang_kg  <- c(10, 50, 20, 20)
 barplot(cannang_kg, names.arg = c("A", "B", "C", "D"), ylab = "Cân nặng (kg)")
 ```
@@ -108,7 +115,7 @@ axis(2)
 
 Dữ liệu nói trên cũng có thể được trình bày thành dạng biểu đồ như sau:
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, fig.cap = "Box plot"}
 df <- c(1, 5, 2, 3, 4, 3, 4, 2, 3)
 boxplot(df, horizontal = T)
 ```

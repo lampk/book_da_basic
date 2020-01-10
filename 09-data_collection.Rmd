@@ -1,3 +1,4 @@
+
 # Thu thập dữ liệu
 
 ## Thiết kế case report form (CRF)
@@ -32,16 +33,75 @@ CRF hay còn gọi là phiếu điều tra, là công cụ dùng để thu thậ
 
 * Dễ thấy hàm lượng thông tin chứa trong mỗi loại biến số giảm dần theo thứ tự sau: Biến liên tục > Biến phân nhóm có thứ tự > Biến phân nhóm không thứ tự > Biến nhị giá. Trong mọi trường hợp có thể thu thập được biến số dưới dạng biến liên tục thì nên thu thập luôn chứ không nên phân nhóm ra. Việc phân nhóm có thể thực hiện khi phân tích. Biến liên tục có thể phân nhóm nhưng biến phân nhóm không thể chuyển ngược trở lại thành biến liên tục được.
 
-** Độ tin cậy (Precision/Reliability), tính giá trị (Accuracy/Validity)**
 
+**Độ tin cậy (Precision/Reliability) và tính giá trị (Accuracy/Validity)**
+
+Độ tin cậy là sự hằng định (consistency) hay mức độ ổn định của một đo lường qua nhiều lần đo khác nhau. Nói cách khác, khi lặp lại việc đo lường hay thu thập một dữ liệu (với điều kiện là dữ liệu này không thay đổi nhiều theo thời gian, ví dụ như đo lại chiều cao của người trưởng thành sau 1 tháng) trên chính đối tượng đó thêm một lần nữa, thì một CRF tốt sẽ cho kết quả không sai khác quá mức so với lần đầu tiên. Còn tính giá trị là khả năng một bộ công cụ có thể đo được vấn đề mà nó được tạo ra để đo lường. Độ tin cậy và tính giá trị được thể hiện qua hình sau:
+
+```{r echo = F}
+knitr::include_graphics("figures/09_01.png")
+```
+
+Ở bia bắn thứ nhất, sau 5 lần bằn, các lỗ đạn không trúng hồng tâm nhưng nằm rất gần nhau. Đây là ví dụ cho một công cụ có độ tin cậy cao, nhưng tính giá trị không cao (không trúng vào hồng tâm).
+
+Ở bia bắn thứ hai, sau 4 lần bắn, các lỗ đạn nằm rất xa nhau tuy nhiên tất cả đều nằm rất gần mép của tấm bia. Nếu mục tiêu là bắn vào mép của tấm bia thì đây là ví dụ cho thấy công cụ có tính giá trị cao (bắn được vào mục tiêu) nhưng độ tin cậy thấp (kết quả đo sau nhiều lần lặp lại không thống nhất).
+
+Ở bia bắn thứ ba, sau 5 lần bắn, các lỗ đạn vừa trúng vào hồng tâm (mục tiêu cần đo), vừa rất ổn định (cả 5 lần bắn đều trúng vào hồng tâm). Đây là ví dụ cho một công cụ vừa có độ tin cậy cao, vừa có tính giá trị cao.
+
+Ở bia bắn cuối cùng, sau 4 lần bắn, các lỗ đạn vừa không trúng vào một mục tiêu cụ thể nào, vừa nằm rải rác xa nhau không có tính ổn định (có lỗ thì ở mép tấm bia, có lỗ thì xích vào gần hồng tâm). Đây là ví dụ cho một công cụ vừa có độ tin cậy thấp, vừa có tính giá trị thấp.
+
+```{r echo = F}
+Reliability <- c("Khả năng lặp lại (reproducibility)",
+                 "Random error (chance)",
+                 "Khả năng ước tính số đo",
+                 "Người quan sát/lấy số liệu: cần đào tạo, tập huấn kỹ năng",
+                 "Đối tượng: kỹ thuật/bản chất -> lựa chọn, lặp lại",
+                 "Công cụ thu thập: thiết kế rõ ràng, đơn giản, hạn chế sai sót")
+Validity <- c("Đo được cái muốn đo",
+              "Systematic error (bias)",
+              "Giá trị của kết luận",
+              "Người quan sát/lấy số liệu: làm mù, SOP, tập huấn",
+              "Đối tượng: khách quan",
+              "Công cụ thu thập: calibration, phù hợp")
+df <- as.data.frame(cbind(Reliability, Validity))
+knitr::kable(df)
+```
 
 
 ### Hình thức
 
 ## Phương pháp thu thập dữ liệu
 
+Hiện nay có thể thu thập dữ liệu trên giấy hoặc điện tử (thông qua các biểu mẫu thiết kế sẵn mà người thu thập có thể truy cập thông qua máy tính bảng, điện thoại).
+
 ## Nhập liệu
 
+<<<<<<< HEAD
 ### Nhập liệu bằng Epidata
+=======
+Có nhiều phần mềm nhập liệu khác nhau, nhưng tất cả đều tiến hành theo ba bước cụ thể: tạo form để nhập liệu, nhập liệu vào form này, trích xuất dữ liệu. Việc sử dụng các phần mềm nhập liệu thay vì nhập trực tiếp vào bảng như Excel có ưu điểm là thiết kế trực quan và các chức năng giúp hạn chế sai sót cho người sử dụng. Những phần mềm nhập liệu phổ biến thường được sử dụng hiện nay:
+
+**Epidata**
+
+```{r echo = F}
+knitr::include_graphics("figures/09_02.png")
+```
+
+Epidata là phần mềm miễn phí và được sử dụng phổ biến nhất hiện nay. Epidata có thể xuất ra nhiều loại file data phổ biến tương thích với các phần mềm phân tích thống kê thông dụng. Có thể tải về tại: https://www.epidata.dk/
+
+**Epi Info**
+
+```{r echo = F}
+knitr::include_graphics("figures/09_03.png")
+```
+
+Có thế tải về tại: https://www.cdc.gov/epiinfo/support/downloads.html
+
+**Google Form**
+
+```{r echo = F}
+knitr::include_graphics("figures/09_04.png")
+```
+>>>>>>> c8c72d14889d5e7225f55127b71eaaeef3883b33
 
 
