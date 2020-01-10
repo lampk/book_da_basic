@@ -1,7 +1,53 @@
 # Viết báo cáo phân tích phân tích
 
-## Nội dung dự kiến
+## Đọc kết quả phân tích như thế nào?
 
-* Đọc kết quả phân tích như thế nào?
-* Diễn giải kết quả phân tích như thế nào?
-* Những sai lầm thường gặp khi đọc và diễn giải kết quả phân tích?
+**Cấu trúc IMRAD: Introduction - Methods - Results - Discussion**
+
+Cấu trúc một bài báo khoa học thường được chia thành 4 phần:
+
+* Introduction: Dẫn đề, tình hình hiện tại, lý do tiến hành và mục tiêu của nghiên cứu
+* Method: Phương pháp nghiên cứu, quy trình lấy mẫu và phân tích thống kê
+* Results: Trình bày kết quả dưới dạng bảng hoặc biểu đồ và nhận xét
+* Discussion: Thảo luận kết quả, so sánh với các nghiên cứu khác
+
+Mỗi phần chứa một nội dung nhất định và không trùng lặp với nhau. Do đó chúng ta không nhất thiết phải đọc toàn bộ một bài báo hoặc đọc theo thứ tự từ đầu đến cuối, mà tùy theo nhu cầu và khía cạnh hiện tại đang quan tâm nhất mà có thể đọc một phần nào đó trước. Tương tự, 
+
+### Cơ sở
+
+Lý do tiến hành nghiên cứu có phù hợp? Câu hỏi nghiên cứu là gì?
+
+### Độ tin cậy
+
+* **Thiết kế**
+
+Thiết kế nghiên cứu là gì? Có phù hợp với câu hỏi và mục tiêu nghiên cứu đặt ra ở phần Introduction không?
+
+* **Cỡ mẫu**
+
+Cỡ mẫu được xác định như thế nào?
+
+* **Kiểm soát sai lệch**
+
+Nghiên cứu có nhóm chứng hay không? Cách đánh giá có đảm bảo tính khách quan? Các yếu tố gây nhiễu có được kiểm soát và được kiểm soát như thế nào?
+
+* **Phân tích thống kê**
+
+Cách phân tích có phù hợp? Hướng phân tích có tuân thủ theo đề cương nghiên cứu không?
+
+Cách trình bày 
+
+* **Diễn giải**
+
+
+
+### Ứng dụng
+
+
+## Diễn giải kết quả phân tích như thế nào?
+
+
+
+## Những sai lầm thường gặp khi đọc và diễn giải kết quả phân tích?
+
+

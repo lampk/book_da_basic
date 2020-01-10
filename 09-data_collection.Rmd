@@ -1,7 +1,47 @@
 # Thu thập dữ liệu
 
-## Nội dung dự kiến
+## Thiết kế case report form (CRF)
 
-* Những điểm càn lưu ý khi thu thập dữ liệu
-* Thu thập dữ liệu như thế nào? WHO-WHAT-WHEN-WHERE-HOW
-* Epidata
+CRF hay còn gọi là phiếu điều tra, là công cụ dùng để thu thập các thông tin cần thiết cho nghiên cứu. Thiết kế CRF cần đảm bảo cả về mặt nội dung lẫn hình thức, để thu được dữ liệu đầy đủ và chính xác nhất có thể, phục vụ cho quá trình phân tích và diễn giải kết quả sau đó.
+
+### Nội dung
+
+**Lựa chọn biến số**
+
+* Việc lựa chọn biến số thu thập cần phải đảm bảo điều kiện tiên quyết là đủ thông tin để trả lời được cho câu hỏi nghiên cứu và thực hiện được mục tiêu nghiên cứu đã đề ra từ đầu. Cân nhắc số lượng biến số để không quá nhiều sẽ làm lãng phí thời gian và nguồn lực dành ra để thu thập biến số, nhưng cũng không quá ít vì có khả năng sẽ không đủ thông tin khi phân tích.
+
+* Một số lưu ý khi thu thập các thông tin nhận dạng được (identifiable information):
+
+  + Các thông tin nhận dạng được là những dữ liệu có thể dùng để biết được bệnh nhân là ai, là một đối tượng cụ thể nào. Các thông tin này bao gồm: tên, địa chỉ, điện thoại, số chứng minh nhân dân hoặc hộ chiếu, mã số bệnh án, số thẻ bảo hiểm y tế. Thông thường, việc thu thập và lưu trữ các thông tin nhận dạng được cần phải thông qua và giải trình trước hội đồng y đức về mục đích và phương pháp bảo mật.
+  
+  + Mục đích: Cân nhắc mục đích thu thập các thông tin này là gì? Có nhất thiết cần phải thu thập những thông tin này hay không? Trong đa số các trường hợp, nếu không thu thập các thông tin nhận dạng mà không ảnh hưởng gì đến việc phân loại bệnh nhân hoặc có giải pháp thay thế thì không nên thu thập thông tin nhận dạng.
+  
+  + Lưu ý khi lưu trữ hoặc chuyển dữ liệu cho người khác: Các thông tin nhận dạng được là dữ liệu hết sức nhạy cảm, vì vậy cần phải có phương pháp đặc thù trong việc lưu trữ thông tin. Trong quá trình lưu trữ, cần đảm bảo chỉ những thành viên nhất định trong nhóm nghiên cứu có thể tiếp cận được những thông tin này, và giữ gìn để thông tin không bị lọt ra bên ngoài. Khi chuyển dữ liệu cho người khác có thể cần phải mã hóa các thông tin nhận dạng hoặc chỉ gửi những phần dữ liệu không chứa thông tin nhận dạng để bảo mật cho bệnh nhân và không vi phạm y đức.
+
+**Cách lấy dữ liệu cho từng biến số**
+
+**Dạng biến số**
+
+* Như đã đề cập trong mục Biến số ở Chương 4, biến số thường được phân nhóm thành 4 loại biến số chính gồm: biến nhị giá, biến phân nhóm, biến thứ tự và biến liên tục. Mỗi loại biến số có đặc tính và chứa một lượng thông tin khác nhau. Tuy nhiên, cùng một biến số có thể được thu thập theo nhiều cách khác nhau. Ví dụ ta có thể thu thập biến Hct theo 3 cách như sau:
+
+  + Biến liên tục: 20.9 23.1 29.9 30.0 39.4 44.1 45.9 62.8 69.3 75.0
+
+  + Biến thứ tự: <30%, 30-40%, 40-50%, 50-60%, >60%
+
+  + Biến nhị giá: Cao (Hct > 50%), Thấp (Hct <= 50%)
+
+* Dễ thấy hàm lượng thông tin chứa trong mỗi loại biến số giảm dần theo thứ tự sau: Biến liên tục > Biến phân nhóm có thứ tự > Biến phân nhóm không thứ tự > Biến nhị giá. Trong mọi trường hợp có thể thu thập được biến số dưới dạng biến liên tục thì nên thu thập luôn chứ không nên phân nhóm ra. Việc phân nhóm có thể thực hiện khi phân tích. Biến liên tục có thể phân nhóm nhưng biến phân nhóm không thể chuyển ngược trở lại thành biến liên tục được.
+
+** Độ tin cậy (Precision/Reliability), tính giá trị (Accuracy/Validity)**
+
+
+
+### Hình thức
+
+## Phương pháp thu thập dữ liệu
+
+## Nhập liệu
+
+### Nhập liệu bằng Epidata
+
+
