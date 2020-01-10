@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html >
+
 <head>
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Chương 5 Kiểm định giả thuyết thống kê | Phân tích số liệu cơ bản</title>
-  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
   <meta property="og:title" content="Chương 5 Kiểm định giả thuyết thống kê | Phân tích số liệu cơ bản" />
   <meta property="og:type" content="book" />
@@ -21,14 +22,14 @@
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
 
-<meta name="author" content="Phùng Khánh Lâm, Ong Phúc Thịnh" />
+<meta name="author" content="Phùng Khánh Lâm, Ong Phúc Thịnh">
 
 
-<meta name="date" content="2019-07-19" />
+<meta name="date" content="2019-11-10">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
 <link rel="prev" href="phan-tich-mo-ta.html">
@@ -67,7 +68,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(title);
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -135,7 +136,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Giới thiệu về phân tích dữ liệu</a><ul>
 <li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#vi-sao-phai-quan-tam-n-phan-tich-d-liu"><i class="fa fa-check"></i><b>1.1</b> Vì sao phải quan tâm đến phân tích dữ liệu</a></li>
-<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#cac-giai-oan-trong-qua-trinh-phan-tich-d-liu"><i class="fa fa-check"></i><b>1.2</b> Các giai đoạn trong quá trình phân tích dữ liệu</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#cac-giai-oan-trong-qua-trinh-phan-tich-d-liu"><i class="fa fa-check"></i><b>1.2</b> Các giai đoạn trong quá trình phân tích dữ liệu</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="intro.html"><a href="intro.html#section"><i class="fa fa-check"></i><b>1.2.1</b> </a></li>
+</ul></li>
 <li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#mt-s-khai-nim"><i class="fa fa-check"></i><b>1.3</b> Một số khái niệm</a><ul>
 <li class="chapter" data-level="1.3.1" data-path="intro.html"><a href="intro.html#bang-d-liu"><i class="fa fa-check"></i><b>1.3.1</b> Bảng dữ liệu</a></li>
 <li class="chapter" data-level="1.3.2" data-path="intro.html"><a href="intro.html#bin-s"><i class="fa fa-check"></i><b>1.3.2</b> Biến số</a></li>
@@ -166,21 +169,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.3.2" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html#d-liu-dang-dai-hay-dang-rng"><i class="fa fa-check"></i><b>3.3.2</b> Dữ liệu dạng dài hay dạng rộng</a></li>
 </ul></li>
 <li class="chapter" data-level="3.4" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html#bang-d-liu-gon-gang-tidy-data"><i class="fa fa-check"></i><b>3.4</b> Bảng dữ liệu gọn gàng (tidy data)</a></li>
+<li class="chapter" data-level="3.5" data-path="chun-bi-d-liu-cho-phan-tich.html"><a href="chun-bi-d-liu-cho-phan-tich.html#ref"><i class="fa fa-check"></i><b>3.5</b> Ref</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html"><i class="fa fa-check"></i><b>4</b> Phân tích mô tả</a><ul>
 <li class="chapter" data-level="4.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#vi-sao-phai-thc-hin-phan-tich-mo-ta"><i class="fa fa-check"></i><b>4.1</b> Vì sao phải thực hiện phân tích mô tả?</a></li>
-<li class="chapter" data-level="4.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#nhc-lai-v-phan-phi-xac-sut"><i class="fa fa-check"></i><b>4.2</b> Nhắc lại về phân phối xác suất</a><ul>
-<li class="chapter" data-level="4.2.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#phan-phi-binh-thung"><i class="fa fa-check"></i><b>4.2.1</b> Phân phối bình thường</a></li>
+<li class="chapter" data-level="4.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#vi-du-anscombe"><i class="fa fa-check"></i><b>4.2</b> Ví dụ Anscombe</a></li>
+<li class="chapter" data-level="4.3" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#nhc-lai-v-phan-phi-xac-sut"><i class="fa fa-check"></i><b>4.3</b> Nhắc lại về phân phối xác suất</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#phan-phi-binh-thung"><i class="fa fa-check"></i><b>4.3.1</b> Phân phối bình thường</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#mo-ta-bin-s-phan-nhom"><i class="fa fa-check"></i><b>4.3</b> Mô tả biến số phân nhóm</a><ul>
-<li class="chapter" data-level="4.3.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#biu-"><i class="fa fa-check"></i><b>4.3.1</b> Biểu đồ</a></li>
-<li class="chapter" data-level="4.3.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#chi-s"><i class="fa fa-check"></i><b>4.3.2</b> Chỉ số</a></li>
+<li class="chapter" data-level="4.4" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#mo-ta-bin-s-phan-nhom"><i class="fa fa-check"></i><b>4.4</b> Mô tả biến số phân nhóm</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#biu-"><i class="fa fa-check"></i><b>4.4.1</b> Biểu đồ</a></li>
+<li class="chapter" data-level="4.4.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#chi-s"><i class="fa fa-check"></i><b>4.4.2</b> Chỉ số</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#mo-ta-bin-s-lien-tuc"><i class="fa fa-check"></i><b>4.4</b> Mô tả biến số liên tục</a><ul>
-<li class="chapter" data-level="4.4.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#biu--1"><i class="fa fa-check"></i><b>4.4.1</b> Biểu đồ</a></li>
-<li class="chapter" data-level="4.4.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#chi-s-1"><i class="fa fa-check"></i><b>4.4.2</b> Chỉ số</a></li>
+<li class="chapter" data-level="4.5" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#mo-ta-bin-s-lien-tuc"><i class="fa fa-check"></i><b>4.5</b> Mô tả biến số liên tục</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#biu--1"><i class="fa fa-check"></i><b>4.5.1</b> Biểu đồ</a></li>
+<li class="chapter" data-level="4.5.2" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#chi-s-1"><i class="fa fa-check"></i><b>4.5.2</b> Chỉ số</a></li>
 </ul></li>
-<li class="chapter" data-level="4.5" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#phan-phi-chun-hay-khong-chun"><i class="fa fa-check"></i><b>4.5</b> Phân phối chuẩn hay không chuẩn?</a></li>
+<li class="chapter" data-level="4.6" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#phan-phi-chun-hay-khong-chun"><i class="fa fa-check"></i><b>4.6</b> Phân phối chuẩn hay không chuẩn?</a></li>
+<li class="chapter" data-level="4.7" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#tai-liu-tham-khao"><i class="fa fa-check"></i><b>4.7</b> Tài liệu tham khảo</a><ul>
+<li class="chapter" data-level="4.7.1" data-path="phan-tich-mo-ta.html"><a href="phan-tich-mo-ta.html#data-visualization"><i class="fa fa-check"></i><b>4.7.1</b> Data visualization</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="kim-inh-gia-thuyt-thng-ke.html"><a href="kim-inh-gia-thuyt-thng-ke.html"><i class="fa fa-check"></i><b>5</b> Kiểm định giả thuyết thống kê</a><ul>
 <li class="chapter" data-level="5.1" data-path="kim-inh-gia-thuyt-thng-ke.html"><a href="kim-inh-gia-thuyt-thng-ke.html#nguyen-tc-kim-inh-thng-ke"><i class="fa fa-check"></i><b>5.1</b> Nguyên tắc kiểm định thống kê</a></li>
@@ -190,22 +198,62 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="6" data-path="mo-hinh-thng-ke.html"><a href="mo-hinh-thng-ke.html"><i class="fa fa-check"></i><b>6</b> Mô hình thống kê</a><ul>
 <li class="chapter" data-level="6.1" data-path="mo-hinh-thng-ke.html"><a href="mo-hinh-thng-ke.html#ni-dung-d-kin-1"><i class="fa fa-check"></i><b>6.1</b> Nội dung dự kiến</a></li>
+<li class="chapter" data-level="6.2" data-path="mo-hinh-thng-ke.html"><a href="mo-hinh-thng-ke.html#tham-khao"><i class="fa fa-check"></i><b>6.2</b> Tham khao</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="vit-bao-cao-phan-tich-phan-tich.html"><a href="vit-bao-cao-phan-tich-phan-tich.html"><i class="fa fa-check"></i><b>7</b> Viết báo cáo phân tích phân tích</a><ul>
-<li class="chapter" data-level="7.1" data-path="vit-bao-cao-phan-tich-phan-tich.html"><a href="vit-bao-cao-phan-tich-phan-tich.html#ni-dung-d-kin-2"><i class="fa fa-check"></i><b>7.1</b> Nội dung dự kiến</a></li>
+<li class="chapter" data-level="7" data-path="myths-common-misunderstanding.html"><a href="myths-common-misunderstanding.html"><i class="fa fa-check"></i><b>7</b> Myths &amp; common misunderstanding</a><ul>
+<li class="chapter" data-level="7.1" data-path="myths-common-misunderstanding.html"><a href="myths-common-misunderstanding.html#control-adjustment"><i class="fa fa-check"></i><b>7.1</b> Control &amp; adjustment</a></li>
+<li class="chapter" data-level="7.2" data-path="myths-common-misunderstanding.html"><a href="myths-common-misunderstanding.html#bias-confounding-effect-modification-collider"><i class="fa fa-check"></i><b>7.2</b> Bias, Confounding, Effect modification, Collider</a></li>
+<li class="chapter" data-level="7.3" data-path="myths-common-misunderstanding.html"><a href="myths-common-misunderstanding.html#correlation-causation"><i class="fa fa-check"></i><b>7.3</b> Correlation &amp; Causation</a></li>
+<li class="chapter" data-level="7.4" data-path="myths-common-misunderstanding.html"><a href="myths-common-misunderstanding.html#tham-khao-1"><i class="fa fa-check"></i><b>7.4</b> Tham khao</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><a href="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><i class="fa fa-check"></i><b>8</b> Đọc và diễn giải kết quả phân tích, Lập kế hoạch phân tích</a><ul>
-<li class="chapter" data-level="8.1" data-path="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><a href="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html#ni-dung-d-kin-3"><i class="fa fa-check"></i><b>8.1</b> Nội dung dự kiến</a></li>
+<li class="chapter" data-level="8" data-path="vit-bao-cao-phan-tich-phan-tich.html"><a href="vit-bao-cao-phan-tich-phan-tich.html"><i class="fa fa-check"></i><b>8</b> Viết báo cáo phân tích phân tích</a><ul>
+<li class="chapter" data-level="8.1" data-path="vit-bao-cao-phan-tich-phan-tich.html"><a href="vit-bao-cao-phan-tich-phan-tich.html#oc-kt-qua-phan-tich-nhu-th-nao"><i class="fa fa-check"></i><b>8.1</b> Đọc kết quả phân tích như thế nào?</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="vit-bao-cao-phan-tich-phan-tich.html"><a href="vit-bao-cao-phan-tich-phan-tich.html#co-s"><i class="fa fa-check"></i><b>8.1.1</b> Cơ sở</a></li>
+<li class="chapter" data-level="8.1.2" data-path="vit-bao-cao-phan-tich-phan-tich.html"><a href="vit-bao-cao-phan-tich-phan-tich.html#-tin-cy"><i class="fa fa-check"></i><b>8.1.2</b> Độ tin cậy</a></li>
+<li class="chapter" data-level="8.1.3" data-path="vit-bao-cao-phan-tich-phan-tich.html"><a href="vit-bao-cao-phan-tich-phan-tich.html#ng-dung"><i class="fa fa-check"></i><b>8.1.3</b> Ứng dụng</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="thu-thp-d-liu.html"><a href="thu-thp-d-liu.html"><i class="fa fa-check"></i><b>9</b> Thu thập dữ liệu</a><ul>
-<li class="chapter" data-level="9.1" data-path="thu-thp-d-liu.html"><a href="thu-thp-d-liu.html#ni-dung-d-kin-4"><i class="fa fa-check"></i><b>9.1</b> Nội dung dự kiến</a></li>
+<li class="chapter" data-level="8.2" data-path="vit-bao-cao-phan-tich-phan-tich.html"><a href="vit-bao-cao-phan-tich-phan-tich.html#din-giai-kt-qua-phan-tich-nhu-th-nao"><i class="fa fa-check"></i><b>8.2</b> Diễn giải kết quả phân tích như thế nào?</a></li>
+<li class="chapter" data-level="8.3" data-path="vit-bao-cao-phan-tich-phan-tich.html"><a href="vit-bao-cao-phan-tich-phan-tich.html#nhng-sai-lm-thung-gp-khi-oc-va-din-giai-kt-qua-phan-tich"><i class="fa fa-check"></i><b>8.3</b> Những sai lầm thường gặp khi đọc và diễn giải kết quả phân tích?</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="tom-tt.html"><a href="tom-tt.html"><i class="fa fa-check"></i><b>10</b> Tóm tắt</a><ul>
-<li class="chapter" data-level="10.1" data-path="tom-tt.html"><a href="tom-tt.html#ni-dung-d-kin-5"><i class="fa fa-check"></i><b>10.1</b> Nội dung dự kiến</a></li>
+<li class="chapter" data-level="9" data-path="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><a href="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><i class="fa fa-check"></i><b>9</b> Đọc và diễn giải kết quả phân tích, Lập kế hoạch phân tích</a><ul>
+<li class="chapter" data-level="9.1" data-path="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><a href="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html#k-hoach-phan-tich-la-gi"><i class="fa fa-check"></i><b>9.1</b> Kế hoạch phân tích là gì?</a></li>
+<li class="chapter" data-level="9.2" data-path="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><a href="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html#tham-khao-2"><i class="fa fa-check"></i><b>9.2</b> Tham khao</a></li>
+<li class="chapter" data-level="9.3" data-path="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><a href="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html#vi-sao-phai-lp-k-hoach-phan-tich"><i class="fa fa-check"></i><b>9.3</b> Vì sao phải lập kế hoạch phân tích?</a></li>
+<li class="chapter" data-level="9.4" data-path="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><a href="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html#lp-k-hoach-phan-tich-nhu-th-nao-who-what-when-where-how"><i class="fa fa-check"></i><b>9.4</b> Lập kế hoạch phân tích như thế nào? WHO-WHAT-WHEN-WHERE-HOW</a></li>
+<li class="chapter" data-level="9.5" data-path="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html"><a href="oc-va-din-giai-kt-qua-phan-tich-lp-k-hoach-phan-tich.html#k-hoach-phan-tich-mu"><i class="fa fa-check"></i><b>9.5</b> Kế hoạch phân tích mẫu</a></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="Rcmdr.html"><a href="Rcmdr.html"><i class="fa fa-check"></i><b>11</b> Giới thiệu về R và R Commander</a></li>
+<li class="chapter" data-level="10" data-path="thu-thp-d-liu.html"><a href="thu-thp-d-liu.html"><i class="fa fa-check"></i><b>10</b> Thu thập dữ liệu</a><ul>
+<li class="chapter" data-level="10.1" data-path="thu-thp-d-liu.html"><a href="thu-thp-d-liu.html#thit-k-case-report-form-crf"><i class="fa fa-check"></i><b>10.1</b> Thiết kế case report form (CRF)</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="thu-thp-d-liu.html"><a href="thu-thp-d-liu.html#ni-dung"><i class="fa fa-check"></i><b>10.1.1</b> Nội dung</a></li>
+<li class="chapter" data-level="10.1.2" data-path="thu-thp-d-liu.html"><a href="thu-thp-d-liu.html#hinh-thc"><i class="fa fa-check"></i><b>10.1.2</b> Hình thức</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="thu-thp-d-liu.html"><a href="thu-thp-d-liu.html#phuong-phap-thu-thp-d-liu"><i class="fa fa-check"></i><b>10.2</b> Phương pháp thu thập dữ liệu</a></li>
+<li class="chapter" data-level="10.3" data-path="thu-thp-d-liu.html"><a href="thu-thp-d-liu.html#nhp-liu"><i class="fa fa-check"></i><b>10.3</b> Nhập liệu</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="tom-tt.html"><a href="tom-tt.html"><i class="fa fa-check"></i><b>11</b> Tóm tắt</a><ul>
+<li class="chapter" data-level="11.1" data-path="tom-tt.html"><a href="tom-tt.html#ni-dung-d-kin-2"><i class="fa fa-check"></i><b>11.1</b> Nội dung dự kiến</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="new-topics.html"><a href="new-topics.html"><i class="fa fa-check"></i><b>12</b> New topics</a><ul>
+<li class="chapter" data-level="12.1" data-path="new-topics.html"><a href="new-topics.html#longitudinal-data-analysis"><i class="fa fa-check"></i><b>12.1</b> Longitudinal data analysis</a></li>
+<li class="chapter" data-level="12.2" data-path="new-topics.html"><a href="new-topics.html#collins_2006-a-conceptual-framework-for-longitudinal-research"><i class="fa fa-check"></i><b>12.2</b> <span class="citation">Collins (<span>2015</span>)</span>: A CONCEPTUAL FRAMEWORK FOR LONGITUDINAL RESEARCH</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="new-topics.html"><a href="new-topics.html#element-1-the-theoretical-model-of-change"><i class="fa fa-check"></i><b>12.2.1</b> Element 1: The Theoretical Model of Change</a></li>
+<li class="chapter" data-level="12.2.2" data-path="new-topics.html"><a href="new-topics.html#element-2-the-temporal-design-used-to-observe-the-change-phenomenon"><i class="fa fa-check"></i><b>12.2.2</b> Element 2: The Temporal Design Used to Observe the Change Phenomenon</a></li>
+<li class="chapter" data-level="12.2.3" data-path="new-topics.html"><a href="new-topics.html#element-3-the-statistical-model-of-change"><i class="fa fa-check"></i><b>12.2.3</b> Element 3: The Statistical Model of Change</a></li>
+<li class="chapter" data-level="12.2.4" data-path="new-topics.html"><a href="new-topics.html#integration-of-the-three-elements"><i class="fa fa-check"></i><b>12.2.4</b> Integration of the Three Elements</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="new-topics.html"><a href="new-topics.html#walls_2006-models-for-intensive-longitudinal-data"><i class="fa fa-check"></i><b>12.3</b> <span class="citation">Theodore A. Walls (<span>2006</span>)</span>: Models for Intensive Longitudinal Data</a></li>
+<li class="chapter" data-level="12.4" data-path="new-topics.html"><a href="new-topics.html#statistical-approaches-for-medical-device-data"><i class="fa fa-check"></i><b>12.4</b> Statistical approaches for medical device data</a><ul>
+<li class="chapter" data-level="12.4.1" data-path="new-topics.html"><a href="new-topics.html#properties-of-medical-device-data"><i class="fa fa-check"></i><b>12.4.1</b> Properties of medical device data</a></li>
+<li class="chapter" data-level="12.4.2" data-path="new-topics.html"><a href="new-topics.html#statistical-approaches"><i class="fa fa-check"></i><b>12.4.2</b> Statistical approaches</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="new-topics.html"><a href="new-topics.html#references"><i class="fa fa-check"></i><b>12.5</b> References</a><ul>
+<li class="chapter" data-level="12.5.1" data-path="new-topics.html"><a href="new-topics.html#intensive-longitudinal-data-analysis"><i class="fa fa-check"></i><b>12.5.1</b> Intensive longitudinal data analysis</a></li>
+<li class="chapter" data-level="12.5.2" data-path="new-topics.html"><a href="new-topics.html#medical-device-data"><i class="fa fa-check"></i><b>12.5.2</b> Medical device data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="Rcmdr.html"><a href="Rcmdr.html"><i class="fa fa-check"></i><b>13</b> Giới thiệu về R và R Commander</a></li>
 <li class="chapter" data-level="" data-path="uc-tinh-c-mu.html"><a href="uc-tinh-c-mu.html"><i class="fa fa-check"></i>Ước tính cỡ mẫu</a></li>
-<li class="chapter" data-level="" data-path="tai-liu-tham-khao.html"><a href="tai-liu-tham-khao.html"><i class="fa fa-check"></i>Tài liệu tham khảo</a></li>
+<li class="chapter" data-level="" data-path="tai-liu-tham-khao-1.html"><a href="tai-liu-tham-khao-1.html"><i class="fa fa-check"></i>Tài liệu tham khảo</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -301,8 +349,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Nếu ta chọn phát biểu ban đầu là giữa hai nhóm có sự khác biệt, thì sự khác biệt là bao nhiêu mới đủ lớn? Dựa vào đâu để chọn con số đó? Vì vậy giả thuyết vô hiệu là sự lựa chọn phù hợp cho các tình huống cần so sánh.</p>
 <p>Nếu null hypothesis là đúng:</p>
 <ul>
-<li>Xác định test statistic: t statistic</li>
-<li>Xác định phân phối của test statistic: phân phối t</li>
+<li>Xác định test statistic</li>
+<li>Xác định phân phối của test statistic</li>
 <li>Tính test statistic trong mẫu</li>
 <li>Tính xác suất kết quả xa hơn test statistic trong mẫu (p)</li>
 </ul>
@@ -314,12 +362,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="tng-quan-v-cac-kim-inh-thng-ke-thung-gp" class="section level2">
 <h2><span class="header-section-number">5.2</span> Tổng quan về các kiểm định thống kê thường gặp</h2>
+<p><strong>Phép kiểm t</strong></p>
+<p>Null hypothesis: Trung bình (nhóm A) = Trung bình (nhóm B)</p>
+<p><strong>Phép kiểm Chi bình phương</strong></p>
+<p>Null hypothesis: Tỷ lệ biến cố (nhóm A) = Tỷ lệ biến cố (nhóm B)</p>
+<p><strong>Phép kiểm Mann-Whitney (Wilcoxon rank sum)</strong></p>
+<p>Null hypothesis: Phân phối (nhóm A) = Phân phối (nhóm B)</p>
+<p><strong>Các phép kiểm cho phân phối bình thường</strong></p>
+<p><strong>Phép kiểm Shapiro-Wilk</strong></p>
+<p>Null hypothesis: X theo phân phối bình thường (dưới góc độ AOV)</p>
+<p><strong>Phép kiểm Kolmogorov-Smirnov</strong></p>
+<p>Null hypothesis: X theo phân phối bình thường (dưới góc độ ECF)</p>
 </div>
 <div id="tri-s-p-y-nghia-va-gia-tri" class="section level2">
 <h2><span class="header-section-number">5.3</span> Trị số p: ý nghĩa và giá trị</h2>
+<p>Nếu null hypothesis là đúng (không có khác biệt giữa hai nhóm), xác suất để quan sát được kết quả như đang có hoặc xa hơn là p.</p>
 </div>
 <div id="mi-quan-h-gia-tri-s-p-va-khoang-tin-cy" class="section level2">
 <h2><span class="header-section-number">5.4</span> Mối quan hệ giữa trị số p và khoảng tin cậy</h2>
+<p>Nếu lặp lại thiết kế nghiên cứu 100 lần, thì có 95 lần kết quả nghiên cứu sẽ nằm trong khoảng tin cậy 95%.</p>
+<p>95% khả năng là khoảng giá trị (-2.42, 7.13) có chứa giá trị khác biệt về hemoconcentration thực sự trong dân số</p>
 
 </div>
 </div>
